@@ -1,0 +1,37 @@
+
+# values.yaml
+redis:
+  enabled: true
+  architecture: standalone
+  auth:
+    enabled: true
+    password: "your-redis-password"
+  persistence:
+    enabled: true
+    size: 8Gi
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "100m"
+    limits:
+      memory: "512Mi"
+      cpu: "200m"
+
+rabbitmq:
+  enabled: true
+  auth:
+    username: "user"
+    password: "your-rabbitmq-password"
+    erlangCookie: "your-erlang-cookie"
+  persistence:
+    enabled: true
+    size: 8Gi
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "200m"
+    limits:
+      memory: "1Gi"
+      cpu: "500m"
+  metrics:
+    enabled: true

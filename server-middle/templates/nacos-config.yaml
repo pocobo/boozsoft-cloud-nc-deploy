@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  mysql.service.name: svc-obproxy.oceanbase.svc.cluster.local
+  mysql.port: '2883'
+  mysql.user: root@metatenant#metadb
+  mysql.password: rootpass
+  mysql.db.name: ncloud-nacos
+  nacos.password: sigoo123..
+kind: ConfigMap
+metadata:
+  name: nacos-cm
+  namespace: csd

@@ -1,0 +1,136 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jeecg-boot-nacos
+  namespace: csd
+  labels:
+    app: jeecg-boot-nacos
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - port: 8848
+      name: server
+      targetPort: 8848
+    - port: 9848
+      name: client-rpc
+      targetPort: 9848
+    - port: 9849
+      name: raft-rpc
+      targetPort: 9849
+    - port: 7848
+      name: old-raft-rpc
+      targetPort: 7848
+  selector:
+    app: nacos
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: jeecg-boot-nacos
+  name: nacos-cluster-manage
+  namespace: csd
+spec:
+  ports:
+    - name: http
+      port: 8848
+      protocol: TCP
+      targetPort: 8848
+      nodePort: 30848
+  selector:
+    app: nacos
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: nacos
+  namespace: csd
+spec:
+  serviceName: jeecg-boot-nacos
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nacos
+      annotations:
+        pod.alpha.kubernetes.io/initialized: "true"
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                      - nacos
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: jeecg-boot-nacos
+          image: crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com/pocobo_docker_io/nacos_nacos-server:v2.3.0
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8848
+              name: client
+            - containerPort: 9848
+              name: client-rpc
+            - containerPort: 9849
+              name: raft-rpc
+            - containerPort: 7848
+              name: old-raft-rpc
+          env:
+            - name: NACOS_REPLICAS
+              value: "150000"
+            - name: NACOS_AUTH_ENABLE
+              value: "true"
+            - name: NACOS_AUTH_TOKEN
+              value: "SecretKey01234567890123456789012345345678999987654901234567890123456789"
+            - name: NACOS_AUTH_IDENTITY_KEY
+              value: "root"
+            - name: NACOS_AUTH_IDENTITY_VALUE
+              value: "pwd"
+            - name: SPRING_DATASOURCE_PLATFORM
+              value: "mysql"
+            - name: MYSQL_SERVICE_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: nacos-cm
+                  key: mysql.service.name
+            - name: MYSQL_SERVICE_DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: nacos-cm
+                  key: mysql.db.name
+            - name: MYSQL_SERVICE_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: nacos-cm
+                  key: mysql.port
+            - name: MYSQL_SERVICE_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: nacos-cm
+                  key: mysql.user
+            - name: MYSQL_SERVICE_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: nacos-cm
+                  key: mysql.password
+            - name: NACOS_SERVER_PORT
+              value: "8848"
+            - name: NACOS_APPLICATION_PORT
+              value: "8848"
+            - name: PREFER_HOST_MODE
+              value: "hostname"
+            - name: NACOS_SERVERS
+              value: "nacos-0.jeecg-boot-nacos.csd.svc.cluster.local:8848"
+  selector:
+    matchLabels:
+      app: nacos
+
+

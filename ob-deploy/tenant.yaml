@@ -1,0 +1,24 @@
+apiVersion: oceanbase.oceanbase.com/v1alpha1
+kind: OBTenant
+metadata:
+  name: metatenant
+  namespace: oceanbase
+spec:
+  obcluster: metadb
+  tenantName: metatenant
+  credentials:
+    root: sc-metatenant-root
+    standbyRo: sc-metatenant-standbyro
+  unitNum: 1
+  charset: utf8mb4
+  connectWhiteList: '%'
+  forceDelete: true
+  pools:
+    - zone: zone1
+      type:
+        name: Full
+        replica: 1
+        isActive: true
+      resource:
+        maxCPU: 4
+        memorySize: 6Gi

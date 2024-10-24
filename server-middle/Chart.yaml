@@ -1,0 +1,6 @@
+# Chart.yaml
+apiVersion: v2
+name: microservices-dependencies
+description: Helm chart for RabbitMQ and Redis
+version: 0.1.0
+type: application
