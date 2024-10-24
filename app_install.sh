@@ -207,10 +207,16 @@ until kubectl get events -n oceanbase-system | grep "became leader"; do
   sleep 5
 done
 
-until kubectl get pods -n oceanbase-system | grep "oceanbase-controller-manager" | grep -v "0/1" | awk '{if ($3 != "Running") exit 1}' > /dev/null 2>&1; do
-    echo "Waiting for oceanbase-controller-manager to be Running..."
-    kubectl get pods -n oceanbase-system
-    sleep 5
+while true; do
+   if kubectl get pods -n oceanbase-system | grep "oceanbase-controller-manager" | grep "2/2" | grep "Running" > /dev/null; then
+       echo "Controller manager is running with all containers ready!"
+       kubectl get pods -n oceanbase-system | grep "oceanbase-controller-manager"
+       break
+   else
+       echo "Waiting for controller manager to be ready..."
+       kubectl get pods -n oceanbase-system | grep "oceanbase-controller-manager"
+       sleep 5
+   fi
 done
 
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
