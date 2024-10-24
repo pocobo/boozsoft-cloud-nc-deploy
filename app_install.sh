@@ -142,15 +142,28 @@ kubectl create secret generic db-secret \
 kubectl apply -f ob-deploy/namespace.yaml
 kubectl apply -f ob-deploy/secret.yaml -noceanbase
 kubectl apply -f ob-deploy/configserver.yaml -noceanbase
-echo "等待 oceanbase webhook 响应..."
-   while true; do
-       if kubectl get endpoints oceanbase-webhook-service -n oceanbase-system 2>/dev/null | grep -v "NAME" > /dev/null; then
-           echo "oceanbase webhook 已就绪!"
-           break
-       fi
-       echo "等待 oceanbase webhook 就绪..."
-       sleep 5
-   done
+kubectl run curl-test2 --image=curlimages/curl -n oceanbase-system -- /bin/sh -c '
+while true; do
+    if curl -sk https://oceanbase-webhook-service.oceanbase-system.svc:443/mutate-oceanbase-oceanbase-com-v1alpha1-obcluster; then
+        echo "Webhook is responsive!"
+        exit 0
+    else
+        echo "Waiting for cert-manager webhook to be responsive..."
+        sleep 5
+    fi
+done'
+
+# 等待 pod 完成
+echo "等待测试结果..."
+while true; do
+   if kubectl logs curl-test2 -n oceanbase-system 2>/dev/null | grep "Webhook is responsive!" > /dev/null; then
+       echo "Webhook 已就绪!"
+       sleep 15
+       break
+   fi
+   echo "等待 webhook 就绪..."
+   sleep 5
+done
 kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
 kubectl apply -f ob-deploy/grafana.yaml -noceanbase
 kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
