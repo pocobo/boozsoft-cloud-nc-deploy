@@ -56,6 +56,12 @@ until kubectl get pods -ncert-manager | grep "cert-manager" | awk '{if ($3 != "R
     kubectl get pods -ncert-manager
     sleep 5
 done
+until kubectl get endpoints oceanbase-webhook-service -n oceanbase-system; do
+    echo "Waiting for oceanbase-webhook-service endpoints..."
+    sleep 5
+done
+
+echo "oceanbase-webhook-service endpoints are ready!"
 
 echo "All cert-manager pods are running! Proceeding to next step..."
 kubectl apply -f base_yaml/operator.yaml
