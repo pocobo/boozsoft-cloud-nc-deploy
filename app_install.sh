@@ -200,13 +200,19 @@ done
 kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
 kubectl apply -f ob-deploy/grafana.yaml -noceanbase
 kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
-kubectl wait --for=condition=Ready configmap db-config -n csd --timeout=60s
 
 kubectl apply -f ob-deploy/prometheus.yaml -noceanbase
 until kubectl get events -n oceanbase-system | grep "became leader"; do
   echo "Waiting for leader election..."
   sleep 5
 done
+
+until kubectl get pods -n oceanbase-system | grep "oceanbase-controller-manager" | grep -v "0/1" | awk '{if ($3 != "Running") exit 1}' > /dev/null 2>&1; do
+    echo "Waiting for oceanbase-controller-manager to be Running..."
+    kubectl get pods -n oceanbase-system
+    sleep 5
+done
+
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
 while true; do
    STATUS=$(kubectl get obtenant -n oceanbase -o jsonpath='{.items[0].status.status}' 2>/dev/null)
