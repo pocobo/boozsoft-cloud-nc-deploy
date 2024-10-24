@@ -1,0 +1,5 @@
+2024-10-24 04:02:43 [WARN] No VIEW were found in "hello"
+2024-10-24 04:02:43 [WARN] No SEQUENCE were found in "hello"
+2024-10-24 04:02:43 [WARN] No TABLEGROUP are exist in the tenant: "metatenant"
+2024-10-24 04:02:43 [WARN] No FUNCTION were found in "hello"
+2024-10-24 04:02:43 [WARN] No PROCEDURE were found in "hello"

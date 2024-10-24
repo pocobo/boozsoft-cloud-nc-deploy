@@ -1,0 +1,53 @@
+mysqldump -h 192.168.199.169 -u root@metatenant#metadb -p database > /backup/dump.sql
+
+vmysql -h 主机地址 -u root -p database < /backup/dump.sql
+
+
+
+mysqldump -h 192.168.199.169 -P 30883 -u"root@metatenant#metadb" -p"rootpass" hello > /backup/dump_$(date +%Y%m%d_%H%M%S).sql > /backup/export.sh
+
+导出
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/hello
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-meta
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-org
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-template
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01-fp
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02-fp
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03-fp
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant-fp
+./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-nacos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+导入
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D hello --ddl --all -f sqls/hello
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-meta --ddl --all -f sqls/ncloud-global-meta
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-org --ddl --all -f sqls/ncloud-global-org
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-template --ddl --all -f sqls/ncloud-global-template
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant --ddl --all -f sqls/ncloud-global-tenant
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant01 --ddl --all -f sqls/ncloud-global-tenant01
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant01-fp --ddl --all -f sqls/ncloud-global-tenant01-fp
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant02 --ddl --all -f sqls/ncloud-global-tenant02
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant02-fp --ddl --all -f sqls/ncloud-global-tenant02-fp
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant03 --ddl --all -f sqls/ncloud-global-tenant03
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant03-fp --ddl --all -f sqls/ncloud-global-tenant03-fp
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-global-tenant-fp --ddl --all -f sqls/ncloud-global-tenant-fp
+./obloader -h 192.168.199.169 -P 30883 -u root@metatenant#metadb -p 'rootpass' --sys-user root --sys-password rootpass -D ncloud-nacos --ddl --all -f sqls/ncloud-nacos

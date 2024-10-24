@@ -1,0 +1,260 @@
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: SELECT TABLE_NAME FROM information_schema.TABLES where TABLE_SCHEMA='hello' AND TABLE_NAME NOT LIKE 'RECYCLE_%' AND TABLE_TYPE='BASE TABLE'  
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: SELECT TABLE_NAME AS OBJECT_NAME FROM information_schema.VIEWS WHERE TABLE_SCHEMA='hello' 
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: select sequence_name as object_name from oceanbase.__all_sequence_object s,oceanbase.__all_database d where s.database_id=d.database_id and d.database_name='hello' 
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: select tablegroup_name AS OBJECT_NAME from oceanbase.__all_tablegroup tg where tg.tablegroup_name not in ('oceanbase') 
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: SELECT ROUTINE_NAME AS OBJECT_NAME FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA='hello' AND ROUTINE_TYPE='FUNCTION' 
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: SELECT ROUTINE_NAME AS OBJECT_NAME FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA='hello' AND ROUTINE_TYPE='PROCEDURE' 
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_dict`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_files`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_cron_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_fill_rule`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_enhance_sql`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_order_customer`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `hello77`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user_tenant`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r12`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_role`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_page`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r14`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r15`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r16`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_v3_hello`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_blob_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r18`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r17`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_calendars`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_order_product`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r19`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user_depart_copy1`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `oss_file`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_map`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_simple_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_third_account`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user_role`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgreport_head`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `s30`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r11`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_locks`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r13`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_log0`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_log1`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_permission_v2`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_dict`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_dict_item`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_depart_role_permission`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_dataset_param`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jeecg_order_customer`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `ceshi_note`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_index`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_db_field`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_quartz_job`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_auth_data`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_field`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `tmp_report_data_income`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_paused_trigger_grps`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_dict_item`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_button`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_data_source`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jeecg_monthly_growth_analysis`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_db_param`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jeecg_project_nature_income`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_enhance_select`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_category`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `x2`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_enhance_java`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `joa_demo`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_auth_page`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_position`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_comment`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_form_file`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_sms`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_data_log`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jeecg_order_ticket`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_dataset_item`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_depart_role_user`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_tenant_pack_perms`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `hello2`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_comp`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `rep_demo_jianpiao`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_sms_template`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `r20`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_announcement`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_depart_permission`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_auth_relation`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user_depart`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `x1`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_simprop_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_log`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_link`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_db`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `rep_demo_employee`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_permission_data_rule`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `helloci`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_shoptype_tree`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `tmp_report_data_1`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_depart_role`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_user_agent`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `demo_field_def_val_sub`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `demo`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `demo_field_def_val_main`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_check_rule`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_demo`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgreport_item`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_gateway_route`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_tenant_pack`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_note`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgreport_param`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_head`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_scheduler_state`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_share`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_permission`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_cgform_enhance_js`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_role_permission`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `task_date`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jimu_report_data_source`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_dataset_head`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `onl_drag_page_comp`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `test_order_main`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `rep_demo_dxtj`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_announcement_send`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `jeecg_order_main`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_depart`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_job_details`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `qrtz_fired_triggers`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `rep_demo_gongsi`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_role_index`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_tenant_pack_user`
+
+2024-10-24 04:02:51 [INFO] ==> Executing Query SQL: show create TABLE `sys_tenant`
+
