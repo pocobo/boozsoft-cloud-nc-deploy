@@ -119,7 +119,8 @@ done
 
 echo "cert-manager is fully ready! Now you can proceed with other installations."
 kubectl apply -f base_yaml/operator.yaml
-
+sleep 5
+kubectl apply -f base_yaml/operator2.yaml
 # 安装oceanbase
 
 
