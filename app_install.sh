@@ -223,26 +223,26 @@ done
 #!/bin/bash
 
 echo "测试MySQL连接..."
-kubectl run mysql-test --image=mysql:5.7 -n oceanbase --rm -i --restart=Never -- bash -c '
 while true; do
-   if mysql -h192.168.199.169 -P30883 -uroot@sys -prootpass -e "SELECT 1" &>/dev/null; then
-       echo "MySQL connection successful!"
-       exit 0
-   else
-       echo "Waiting for MySQL to be accessible..."
-       sleep 5
-   fi
-done'
+    OUTPUT=$(kubectl run mysql-test --image=mysql:5.7 -n oceanbase --rm -i --restart=Never -- bash -c '
+    if mysql -hsvc-obproxy -P2883 -uroot@sys -prootpass -e "SELECT 1" &>/dev/null; then
+        echo "MySQL connection successful!"
+        exit 0
+    else
+        echo "Waiting for MySQL to be accessible..."
+        exit 1
+    fi
+    ' 2>&1)
 
-# 等待测试结果
-echo "等待MySQL连接测试结果..."
-while true; do
-   if kubectl logs mysql-test -n oceanbase 2>/dev/null | grep "MySQL connection successful!" > /dev/null; then
-       echo "MySQL已经可以连接!"
-       break
-   fi
-   echo "等待MySQL就绪..."
-   sleep 5
+    if echo "$OUTPUT" | grep -q "MySQL connection successful!"; then
+        echo "MySQL连接成功，继续执行..."
+        break
+    else
+        echo "等待MySQL就绪..."
+        # 确保旧的pod被清理
+        kubectl delete pod mysql-test -n oceanbase --ignore-not-found=true &>/dev/null
+        sleep 5
+    fi
 done
 
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
