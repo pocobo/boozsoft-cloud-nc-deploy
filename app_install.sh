@@ -208,10 +208,24 @@ until kubectl get events -n oceanbase-system | grep "became leader"; do
   sleep 5
 done
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
-until kubectl get obtenant -n oceanbase | grep "running"; do
-  echo "Waiting for tenant to become running..."
-  sleep 10
-  kubectl get obtenant -n oceanbase
+while true; do
+   STATUS=$(kubectl get obtenant -n oceanbase -o jsonpath='{.items[0].status.status}' 2>/dev/null)
+
+   if [ "$STATUS" = "running" ]; then
+       echo "Tenant is running!"
+       kubectl get obtenant -n oceanbase
+       break
+   elif [ "$STATUS" = "failed" ]; then
+       echo "Tenant failed, deleting and recreating..."
+       kubectl delete ob-deploy/tenant.yaml  -n oceanbase
+       sleep 10
+       kubectl apply -f ob-deploy/tenant.yaml -n oceanbase
+   else
+       echo "Current tenant status: $STATUS"
+       kubectl get obtenant -n oceanbase
+   fi
+
+   sleep 5
 done
 # 导入数据库
 kubectl apply -f init_job.yaml -ncsd
