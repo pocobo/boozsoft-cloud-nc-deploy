@@ -34,6 +34,24 @@ ENV JAVA_OPTS="-server -Xms8G -Xmx8G -XX:MetaspaceSize=128M -XX:MaxMetaspaceSize
 # 创建数据目录
 RUN mkdir -p /app/data
 
+ENV DB_HOST="192.168.199.169" \
+    DB_USER="root@metatenant#metadb" \
+    DB_PORT="30883" \
+    DB_PASSWORD="rootpass" \
+    DB_NAME="oceanbase" \
+    SYS_USER="root" \
+    SYS_PASSWORD="rootpass"
+
+#    docker run \
+#        -e DB_HOST="192.168.199.169" \
+#        -e DB_USER="root@metatenant#metadb" \
+#        -e DB_PORT="30883" \
+#        -e DB_PASSWORD="rootpass" \
+#        -e DB_NAME="oceanbase" \
+#        -e SYS_USER="root" \
+#        -e SYS_PASSWORD="rootpass" \
+#        data1
+
 # 设置快捷命令的脚本
 RUN echo '#!/bin/bash\n\
 obclient -h192.168.199.169 -P30883 -uroot@metatenant#metadb -prootpass hello' > /app/connect.sh \
