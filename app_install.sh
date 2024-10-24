@@ -49,6 +49,13 @@ kubectl apply -f base_yaml/cert-manager.yaml
 kubectl apply -f base_yaml/local-path-storage.yaml
 kubectl apply -f base_yaml/operator_namespace.yaml
 kubectl apply -f base_yaml/csd_namespace.yaml
+until kubectl get pods -ncert-manager | grep "cert-manager" | awk '{if ($3 != "Running") exit 1}'; do
+    echo "Waiting for cert-manager pods to be ready..."
+    kubectl get pods -ncert-manager
+    sleep 5
+done
+
+echo "All cert-manager pods are running! Proceeding to next step..."
 kubectl apply -f base_yaml/operator.yaml
 
 
