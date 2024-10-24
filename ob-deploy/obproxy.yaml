@@ -4,16 +4,18 @@ metadata:
   name: svc-obproxy
   namespace: oceanbase
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: obproxy
   ports:
     - name: "sql"
       port: 2883
       targetPort: 2883
+      nodePort: 30883
     - name: "prometheus"
       port: 2884
       targetPort: 2884
+      nodePort: 30884
 
 ---
 apiVersion: apps/v1
