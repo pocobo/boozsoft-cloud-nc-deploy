@@ -47,6 +47,7 @@ snap install helm
 # 安装k8s前置资源
 kubectl apply -f base_yaml/cert-manager.yaml
 kubectl apply -f base_yaml/local-path-storage.yaml
+kubectl apply -f base_yaml/operator_namespace.yaml
 kubectl apply -f base_yaml/operator.yaml
 
 
@@ -74,10 +75,10 @@ kubectl apply -f ob-deploy/configserver.yaml -noceanbase
 kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
 kubectl apply -f ob-deploy/grafana.yaml -noceanbase
 kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
-kubectl wait --for=condition=Ready configmap db-config -n oceanbase --timeout=60s
-kubectl apply -f oceanbase-todo.yaml -noceanbase
-kubectl apply -f prometheus.yaml -noceanbase
-kubectl apply -f tenant.yaml -noceanbase
+kubectl wait --for=condition=Ready configmap db-config -n csd --timeout=60s
+kubectl apply -f ob-deploy/oceanbase-todo.yaml -noceanbase
+kubectl apply -f ob-deploy/prometheus.yaml -noceanbase
+kubectl apply -f ob-deploy/tenant.yaml -noceanbase
 # 导入数据库
 kubectl apply -f init_job.yaml -ncsd
 
