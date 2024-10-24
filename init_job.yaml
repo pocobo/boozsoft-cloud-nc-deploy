@@ -1,4 +1,3 @@
-# job.yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -7,7 +6,7 @@ metadata:
     app: csdapp-db-init
 spec:
   ttlSecondsAfterFinished: 100
-  backoffLimit: 1
+  backoffLimit: 3  # 增加重试次数
   template:
     metadata:
       name: csdapp-db-init
@@ -15,12 +14,19 @@ spec:
         app: csdapp-db-init
     spec:
       restartPolicy: OnFailure
+      # 添加容忍度，防止被驱逐
+      tolerations:
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 300
       containers:
         - name: db-init
           image: crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com/pocobo/csdapp_initsql_job
           env:
             - name: JAVA_OPTS
-              value: "-server -Xms512M -Xmx512M -XX:MetaspaceSize=128M -XX:MaxMetaspaceSize=128M"
+              value: "-server -Xms6G -Xmx6G -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=256M -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/heapdump.hprof"
+            # 其他环境变量保持不变
             - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
@@ -63,3 +69,12 @@ spec:
             limits:
               memory: "8Gi"
               cpu: "1000m"
+          # 添加健康检查
+          livenessProbe:
+            exec:
+              command:
+                - sh
+                - -c
+                - "ps aux | grep java"
+            initialDelaySeconds: 30
+            periodSeconds: 10
