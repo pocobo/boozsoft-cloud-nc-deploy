@@ -217,7 +217,7 @@ while true; do
        break
    elif [ "$STATUS" = "failed" ]; then
        echo "Tenant failed, deleting and recreating..."
-       kubectl delete ob-deploy/tenant.yaml  -n oceanbase
+       kubectl delete -f ob-deploy/tenant.yaml  -n oceanbase
        sleep 10
        kubectl apply -f ob-deploy/tenant.yaml -n oceanbase
    else
