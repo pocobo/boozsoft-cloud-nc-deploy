@@ -1,0 +1,6 @@
+# Chart.yaml
+apiVersion: v2
+name: csd-system
+description: A Helm chart for CSD System
+version: 0.1.0
+appVersion: "1.0.0"

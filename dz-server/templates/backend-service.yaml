@@ -1,0 +1,13 @@
+{{- define "backend.service" -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .app_name | default .name }}  # 添加默认值处理
+spec:
+  selector:
+    app: {{ .name }}
+  ports:
+    - protocol: TCP
+      port: {{ .port }}
+      targetPort: {{ .port }}
+{{- end -}}

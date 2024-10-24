@@ -1,0 +1,13 @@
+{{- range $name, $config := .Values.frontend }}
+---
+{{ template "frontend.deployment" (dict "name" $name "image" $config.image "tag" $config.tag "port" $config.port "Values" $.Values) }}
+---
+{{ template "frontend.service" (dict "name" $name "port" $config.port "app_name" $config.app_name) }}
+{{- end }}
+
+{{- range $name, $config := .Values.backend }}
+---
+{{ template "backend.deployment" (dict "name" $name "image" $config.image "tag" $config.tag "Values" $.Values) }}
+---
+{{ template "backend.service" (dict "name" $name "port" $config.port "app_name" $config.app_name) }}
+{{- end }}

@@ -1,0 +1,88 @@
+# values.yaml
+global:
+  imageRegistry: crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com
+  imagePullPolicy: Always
+
+frontend:
+  web-gateway:
+    image: pocobo/csd-web-gateway
+    tag: latest
+    port: 80
+    app_name: nginxgateway-service
+  web-admin-manager:
+    image: pocobo/csd-web-admin-manager
+    tag: latest
+    port: 80
+    app_name: nginx3107-service
+  web-auth-manager:
+    image: pocobo/csd-web-auth-manager
+    tag: latest
+    port: 80
+    app_name: nginxauthmanager-service
+  web-31011:
+    image: pocobo/csd-web-31011
+    tag: latest
+    port: 3000
+    app_name: csd-web-31011-service
+  web-31021:
+    image: pocobo/csd-web-31021
+    tag: latest
+    port: 80
+    app_name: csd-web-31021-service
+  web-31031:
+    image: pocobo/csd-web-31031
+    tag: latest
+    port: 80
+    app_name: csd-web-31031-service
+  web-auth3107:
+    image: pocobo/csd-web-auth-3107
+    tag: latest
+    port: 80
+    app_name: nginxadmin-service
+  web-auth-nitro:
+    image: pocobo/csd-web-auth-nitro
+    tag: latest
+    port: 3000
+    app_name: nginxauth-nitro-service
+  web-tenant-manager:
+    image: pocobo/csd-web-tenant-manager
+    tag: latest
+    port: 80
+    app_name: nginxtenantmanager-service
+  web-tenant:
+    image: pocobo/csd-web-tenant
+    tag: latest
+    port: 80
+    app_name: nginxtenant-service
+
+backend:
+  server-gateway:
+    image: pocobo/csd-gateway-cloud
+    tag: latest
+    port: 9999
+    app_name: csd-gateway-service
+  server-system:
+    image: pocobo/csd-system-cloud
+    tag: latest
+    port: 7005
+    app_name: csd-cloud-system-service
+  server-tenant-manager:
+    image: pocobo/csd-tenant-manager-cloud
+    tag: latest
+    port: 7006
+    app_name: csd-cloud-tenant-manager-service
+  server-tenant:
+    image: pocobo/csd-tenant-cloud
+    tag: latest
+    port: 7008
+    app_name: csd-cloud-tenant-service
+  server-admin-platform:
+    image: pocobo/csd-admin-platform-cloud
+    tag: latest
+    port: 7012
+    app_name: csd-cloud-admin-platform-service
+  server-meta:
+    image: pocobo/csd-meta-cloud
+    tag: latest
+    port: 7010
+    app_name: csd-cloud-meta-service
