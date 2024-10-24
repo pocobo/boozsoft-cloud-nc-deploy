@@ -38,7 +38,7 @@ spec:
                   key: DB_PORT
             - name: DB_PASSWORD
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   name: db-config
                   key: DB_PASSWORD
             - name: DB_NAME
@@ -53,8 +53,8 @@ spec:
                   key: SYS_USER
             - name: SYS_PASSWORD
               valueFrom:
-                configMapKeyRef:
-                  name: db-config
+                secretKeyRef:
+                  name: db-secret
                   key: SYS_PASSWORD
           resources:
             requests:
