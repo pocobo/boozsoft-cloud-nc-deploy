@@ -1,10 +1,12 @@
+#git config --global url."https://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@github.com".insteadOf "https://github.com"
+#git clone https://github.com/pocobo/boozsoft-cloud-nc-deploy.git
 mkdir /root/.kube
 
 # 1.安装k3s
-#curl –sfL \
-#https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
-#INSTALL_K3S_MIRROR=cn sh -s - \
-#--system-default-registry "registry.cn-hangzhou.aliyuncs.com"
+curl –sfL \
+https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
+INSTALL_K3S_MIRROR=cn sh -s - \
+--system-default-registry "registry.cn-hangzhou.aliyuncs.com"
 cp -rf /etc/rancher/k3s/k3s.yaml /root/.kube/config
 cat << 'EOF' > /etc/rancher/k3s/registries.yaml
 mirrors:
