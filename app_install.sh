@@ -51,21 +51,42 @@ kubectl apply -f base_yaml/cert-manager.yaml
 kubectl apply -f base_yaml/local-path-storage.yaml
 kubectl apply -f base_yaml/operator_namespace.yaml
 kubectl apply -f base_yaml/csd_namespace.yaml
-until kubectl get pods -ncert-manager | grep "cert-manager" | awk '{if ($3 != "Running") exit 1}'; do
-    echo "Waiting for cert-manager pods to be ready..."
-    kubectl get pods -ncert-manager
-    sleep 5
-done
-until kubectl get endpoints oceanbase-webhook-service -n oceanbase-system; do
-    echo "Waiting for oceanbase-webhook-service endpoints..."
+
+echo "Waiting for cert-manager components to be ready..."
+
+# 等待所有 cert-manager pods 变成 Running
+until kubectl get pods -n cert-manager | grep "cert-manager" | grep -v "0/1" | awk '{if ($3 != "Running") exit 1}' > /dev/null 2>&1; do
+    echo "Waiting for cert-manager pods to be Running..."
+    kubectl get pods -n cert-manager
     sleep 5
 done
 
-echo "oceanbase-webhook-service endpoints are ready!"
+echo "All cert-manager pods are Running, waiting for webhook service..."
 
-echo "All cert-manager pods are running! Proceeding to next step..."
+# 等待 webhook endpoint 就绪
+until kubectl get endpoints cert-manager-webhook -n cert-manager 2>/dev/null | grep -v "NAME" | awk '{if ($2 == "") exit 1}'; do
+    echo "Waiting for cert-manager-webhook endpoint..."
+    kubectl get endpoints cert-manager-webhook -n cert-manager
+    sleep 5
+done
+
+echo "Webhook service has endpoints, waiting for API availability..."
+
+# 等待 webhook 可以正常响应
+until curl -sk https://cert-manager-webhook.cert-manager.svc:443/mutate -o /dev/null 2>&1; do
+    echo "Waiting for cert-manager webhook to be responsive..."
+    sleep 5
+done
+
+# 最后验证 API 是否完全就绪
+echo "Verifying cert-manager API..."
+until kubectl get --raw /apis/cert-manager.io/v1 >/dev/null 2>&1; do
+    echo "Waiting for cert-manager API to be available..."
+    sleep 5
+done
+
+echo "cert-manager is fully ready! Now you can proceed with other installations."
 kubectl apply -f base_yaml/operator.yaml
-
 
 # 安装oceanbase
 
@@ -94,7 +115,16 @@ kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
 kubectl wait --for=condition=Ready configmap db-config -n csd --timeout=60s
 
 kubectl apply -f ob-deploy/prometheus.yaml -noceanbase
+until kubectl get events -n oceanbase-system | grep "became leader"; do
+  echo "Waiting for leader election..."
+  sleep 5
+done
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
+until kubectl get obtenant -n oceanbase | grep "running"; do
+  echo "Waiting for tenant to become running..."
+  sleep 10
+  kubectl get obtenant -n oceanbase
+done
 # 导入数据库
 kubectl apply -f init_job.yaml -ncsd
 kubectl apply -f ob-deploy/oceanbase-todo.yaml -noceanbase
