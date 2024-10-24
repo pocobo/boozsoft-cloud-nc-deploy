@@ -1,13 +1,7 @@
 #git config --global url."https://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@github.com".insteadOf "https://github.com"
 #git clone https://github.com/pocobo/boozsoft-cloud-nc-deploy.git
 mkdir /root/.kube
-
-# 1.安装k3s
-curl –sfL \
-https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
-INSTALL_K3S_MIRROR=cn sh -s - \
---system-default-registry "registry.cn-hangzhou.aliyuncs.com"
-cp -rf /etc/rancher/k3s/k3s.yaml /root/.kube/config
+mkdir -p  /etc/rancher/k3s/
 cat << 'EOF' > /etc/rancher/k3s/registries.yaml
 mirrors:
   bj.env.caishuida.cn:
@@ -41,7 +35,46 @@ configs:
       username: pocobo@1099662296022792
       password: sigoo123
 EOF
-systemctl restart k3s
+# 1.安装k3s
+curl –sfL \
+https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
+INSTALL_K3S_MIRROR=cn sh -s - \
+--system-default-registry "registry.cn-hangzhou.aliyuncs.com"
+cp -rf /etc/rancher/k3s/k3s.yaml /root/.kube/config
+
+cat << 'EOF' > /etc/rancher/k3s/registries.yaml
+mirrors:
+  bj.env.caishuida.cn:
+    endpoint:
+      - "http://bj.env.caishuida.cn:88"
+  "123.112.240.231:88":
+    endpoint:
+      - "http://123.112.240.231:88"
+  "docker.io":
+    endpoint:
+      - "https://ddkwemz5.mirror.aliyuncs.com"
+      - "https://docker.1panel.live"
+      - "https://hub.rat.dev/"
+      - "https://docker.chenby.cn"
+      - "https://docker.m.daocloud.io"
+  "crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com":
+    endpoint:
+      - "https://crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com"
+
+configs:
+  "harbor.boozsoft.fun:8443":
+    auth:
+      username: admin
+      password: Harbor12345
+  "192.168.199.60":
+    auth:
+      username: admin
+      password: Harbor12345
+  "crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com":
+    auth:
+      username: pocobo@1099662296022792
+      password: sigoo123
+EOF
 
 # 安装helm
 #snap install helm --classic
