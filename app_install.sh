@@ -71,12 +71,30 @@ until kubectl get endpoints cert-manager-webhook -n cert-manager 2>/dev/null | g
 done
 
 echo "Webhook service has endpoints, waiting for API availability..."
+echo "创建并等待 webhook 测试..."
 
-# 等待 webhook 可以正常响应
-until curl -sk https://cert-manager-webhook.cert-manager.svc:443/mutate -o /dev/null 2>&1; do
-    echo "Waiting for cert-manager webhook to be responsive..."
-    sleep 5
-done
+# 使用 curlimages/curl 镜像创建测试 pod
+kubectl run curl-test --image=curlimages/curl -n cert-manager -- /bin/sh -c '
+while true; do
+    if curl -sk https://cert-manager-webhook.cert-manager.svc:443/mutate; then
+        echo "Webhook is responsive!"
+        exit 0
+    else
+        echo "Waiting for cert-manager webhook to be responsive..."
+        sleep 5
+    fi
+done'
+
+# 等待 pod 完成
+echo "等待测试结果..."
+kubectl wait --for=condition=Ready pod/curl-test -n cert-manager --timeout=300s
+
+# 查看结果
+echo "查看测试日志..."
+kubectl logs -f curl-test -n cert-manager
+
+# 清理测试 pod
+kubectl delete pod curl-test -n cert-manager
 
 # 最后验证 API 是否完全就绪
 echo "Verifying cert-manager API..."
