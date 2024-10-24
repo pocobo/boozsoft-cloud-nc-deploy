@@ -63,5 +63,5 @@ RUN chmod +x /app/start.sh
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-1.el7_9.x86_64/jre
 ENV JRE_HOME=/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.412.b08-1.el7_9.x86_64/jre
 # 保持容器运行
-CMD ["./start.sh"]
-#CMD ["tail", "-f", "/dev/null"]
+#CMD ["./start.sh"]
+CMD ["tail", "-f", "/dev/null"]
