@@ -57,11 +57,13 @@ RUN echo '#!/bin/bash\n\
 obclient -h192.168.199.169 -P30883 -uroot@metatenant#metadb -prootpass hello' > /app/connect.sh \
     && chmod +x /app/connect.sh
 COPY sqls /app/sqls
-COPY start.sh /app/
-RUN chmod +x /app/start.sh
 
+
+COPY start2.sh /app/start2.sh
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-1.el7_9.x86_64/jre
 ENV JRE_HOME=/usr/lib/jvm/jre-1.8.0-openjdk-1.8.0.412.b08-1.el7_9.x86_64/jre
+RUN chmod +x /app/start2.sh
 # 保持容器运行
-CMD ["./start.sh"]
+
+CMD ["./start2.sh"]
 #CMD ["tail", "-f", "/dev/null"]

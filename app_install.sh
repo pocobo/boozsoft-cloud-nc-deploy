@@ -271,7 +271,7 @@ echo "等待数据库初始化 Job 完成..."
 while true; do
     STATUS=$(kubectl get pods -n csd -l job-name=csdapp-db-init -o jsonpath='{.items[0].status.phase}' 2>/dev/null)
 
-    if [ "$STATUS" = "Completed" ]; then
+    if [ "$STATUS" = "Succeeded" ]; then
         echo "数据库初始化 Pod 已完成!"
         kubectl get pods -n csd -l job-name=csdapp-db-init
         break
