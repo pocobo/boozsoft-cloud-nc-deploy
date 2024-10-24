@@ -44,8 +44,8 @@ EOF
 systemctl restart k3s
 
 # 安装helm
-snap install helm --classic
-
+#snap install helm --classic
+wget -c https://github.com/pocobo/boozsoft-cloud-nc-deploy/releases/download/1.0.0/helm-v3.16.2-linux-amd64.tar.gz && tar -zxvf helm-v3.16.2-linux-amd64.tar.gz &&  mv linux-amd64/helm /bin/
 # 安装k8s前置资源
 kubectl apply -f base_yaml/cert-manager.yaml
 kubectl apply -f base_yaml/local-path-storage.yaml
