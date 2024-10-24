@@ -1,0 +1,30 @@
+mirrors:
+  bj.env.caishuida.cn:
+    endpoint:
+      - "http://bj.env.caishuida.cn:88"
+  "123.112.240.231:88":
+    endpoint:
+      - "http://123.112.240.231:88"
+  "docker.io":
+    endpoint:
+      - "https://ddkwemz5.mirror.aliyuncs.com"
+      - "https://docker.1panel.live"
+      - "https://hub.rat.dev/"
+      - "https://docker.chenby.cn"
+      - "https://docker.m.daocloud.io"
+  "crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com":
+    endpoint:
+      - "https://crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com"
+configs:
+  "harbor.boozsoft.fun:8443":
+    auth:
+      username: admin
+      password: Harbor12345
+  "192.168.199.60":
+    auth:
+      username: admin
+      password: Harbor12345
+  "crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com":
+    auth:
+      username: pocobo@1099662296022792
+      password: sigoo123
