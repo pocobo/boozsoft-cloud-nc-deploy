@@ -32,7 +32,7 @@ git lfs track "2020410231523/ncloud-global-tenant.sql"
 # 3. 确保 .gitattributes 文件被提交
 git add .gitattributes
 git commit -m "build: add git lfs tracking"
-
+ 
 # 4. 重新添加大文件
 git add 2020410231523/ncloud-global-tenant.sql
 git commit -m "feat: add database sql file"
