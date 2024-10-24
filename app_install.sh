@@ -42,12 +42,13 @@ EOF
 systemctl restart k3s
 
 # 安装helm
-snap install helm
+snap install helm --classic
 
 # 安装k8s前置资源
 kubectl apply -f base_yaml/cert-manager.yaml
 kubectl apply -f base_yaml/local-path-storage.yaml
 kubectl apply -f base_yaml/operator_namespace.yaml
+kubectl apply -f base_yaml/csd_namespace.yaml
 kubectl apply -f base_yaml/operator.yaml
 
 
