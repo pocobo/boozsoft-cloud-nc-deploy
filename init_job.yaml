@@ -40,7 +40,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: db-secret
-                  key: DB_PASSWORD
+                  key: PASSWORD
             - name: DB_NAME
               valueFrom:
                 configMapKeyRef:
