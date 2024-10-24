@@ -1,0 +1,65 @@
+# job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: csdapp-db-init
+  labels:
+    app: csdapp-db-init
+spec:
+  ttlSecondsAfterFinished: 100
+  backoffLimit: 3
+  template:
+    metadata:
+      name: csdapp-db-init
+      labels:
+        app: csdapp-db-init
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: db-init
+          image: crpi-hrvq5w8tkla6visb.cn-beijing.personal.cr.aliyuncs.com/pocobo/csdapp_initsql_job
+          env:
+            - name: JAVA_OPTS
+              value: "-server -Xms512M -Xmx512M -XX:MetaspaceSize=128M -XX:MaxMetaspaceSize=128M"
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_HOST
+            - name: DB_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_USER
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_PORT
+            - name: DB_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_PASSWORD
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: DB_NAME
+            - name: SYS_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: SYS_USER
+            - name: SYS_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: SYS_PASSWORD
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "500m"
+            limits:
+              memory: "2Gi"
+              cpu: "1000m"
