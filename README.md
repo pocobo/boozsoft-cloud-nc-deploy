@@ -1,3 +1,6 @@
+nacos 注意 config表，oceanbase没有正确转换行，需要手动转一下
+
+
 安装ubuntu22.04
 dns 调整为114.114.114.114
 安装k3s
