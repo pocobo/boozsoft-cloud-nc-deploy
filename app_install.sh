@@ -68,12 +68,12 @@ kubectl create secret generic db-secret \
   --from-literal=PASSWORD=rootpass \
   --from-literal=SYS_PASSWORD=rootpass -ncsd
 
-kubectl apply -f namespace.yaml
-kubectl apply -f secret.yaml -noceanbase
-kubectl apply -f configserver.yaml -noceanbase
-kubectl apply -f obcluster.yaml -noceanbase
-kubectl apply -f grafana.yaml -noceanbase
-kubectl apply -f obproxy.yaml -noceanbase
+kubectl apply -f ob-deploy/namespace.yaml
+kubectl apply -f ob-deploy/secret.yaml -noceanbase
+kubectl apply -f ob-deploy/configserver.yaml -noceanbase
+kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
+kubectl apply -f ob-deploy/grafana.yaml -noceanbase
+kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
 kubectl wait --for=condition=Ready configmap db-config -n oceanbase --timeout=60s
 kubectl apply -f oceanbase-todo.yaml -noceanbase
 kubectl apply -f prometheus.yaml -noceanbase
