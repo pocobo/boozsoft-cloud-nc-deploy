@@ -16,7 +16,7 @@ obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAM
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "DROP DATABASE IF EXISTS \`ncloud-global-tenant-fp\`;"
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "DROP DATABASE IF EXISTS \`ncloud-nacos\`;"
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "DROP DATABASE IF EXISTS \`gssj\`;"
-
+obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "DROP DATABASE IF EXISTS \`dev\`;"
 # 创建数据库（注意使用反引号括起带连字符的数据库名）
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE hello;"
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE \`ncloud-global-meta\`;"
@@ -32,7 +32,7 @@ obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAM
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE \`ncloud-global-tenant-fp\`;"
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE \`ncloud-nacos\`;"
 obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE \`gssj\`;"
-
+obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAME} -e "CREATE DATABASE \`dev\`;"
 
 
 

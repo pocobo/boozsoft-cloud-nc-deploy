@@ -84,12 +84,13 @@ kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
 kubectl apply -f ob-deploy/grafana.yaml -noceanbase
 kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
 kubectl wait --for=condition=Ready configmap db-config -n csd --timeout=60s
-kubectl apply -f ob-deploy/oceanbase-todo.yaml -noceanbase
+
 kubectl apply -f ob-deploy/prometheus.yaml -noceanbase
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
 # 导入数据库
 kubectl apply -f init_job.yaml -ncsd
+kubectl apply -f ob-deploy/oceanbase-todo.yaml -noceanbase
 
 # 安装中间件
-helm install server-middle install ./server-middle -ncsd
-helm install csdapp install ./dz-server -ncsd
+helm install server-middle  ./server-middle -ncsd
+helm install csdapp  ./dz-server -ncsd
