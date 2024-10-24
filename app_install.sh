@@ -95,11 +95,14 @@ echo "等待测试结果..."
 while true; do
    if kubectl logs curl-test -n cert-manager 2>/dev/null | grep "Webhook is responsive!" > /dev/null; then
        echo "Webhook 已就绪!"
+       sleep 5
        break
    fi
    echo "等待 webhook 就绪..."
    sleep 5
 done
+
+
 # 查看结果
 echo "查看测试日志..."
 kubectl logs -f curl-test -n cert-manager
