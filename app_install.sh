@@ -74,6 +74,11 @@ echo "Webhook service has endpoints, waiting for API availability..."
 echo "创建并等待 webhook 测试..."
 
 # 使用 curlimages/curl 镜像创建测试 pod
+echo "等待 ServiceAccount 就绪..."
+until kubectl get serviceaccount default -n cert-manager > /dev/null 2>&1; do
+   echo "Waiting for ServiceAccount default to be ready..."
+   sleep 5
+done
 kubectl run curl-test --image=curlimages/curl -n cert-manager -- /bin/sh -c '
 while true; do
     if curl -sk https://cert-manager-webhook.cert-manager.svc:443/mutate; then
