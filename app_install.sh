@@ -120,7 +120,7 @@ done
 echo "cert-manager is fully ready! Now you can proceed with other installations."
 kubectl apply -f base_yaml/operator.yaml
 sleep 5
-kubectl apply -f base_yaml/operator2.yaml
+kubectl apply -f base_yaml/operator2.yaml -noceanbase-system
 # 安装oceanbase
 
 
@@ -142,6 +142,7 @@ kubectl create secret generic db-secret \
 kubectl apply -f ob-deploy/namespace.yaml
 kubectl apply -f ob-deploy/secret.yaml -noceanbase
 kubectl apply -f ob-deploy/configserver.yaml -noceanbase
+
 kubectl apply -f ob-deploy/obcluster.yaml -noceanbase
 kubectl apply -f ob-deploy/grafana.yaml -noceanbase
 kubectl apply -f ob-deploy/obproxy.yaml -noceanbase
