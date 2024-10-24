@@ -1,0 +1,29 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: dz.api.caishuida.com
+  namespace: csd
+spec:
+  entryPoints:
+    - web
+    - websecure
+  tls:
+    secretName: dz.api.caishuida.com-secret
+  routes:
+    - match: Host(`dz.api.caishuida.com`)
+      kind: Rule
+      services:
+        - name: nginxgateway-service
+          port: 80
+      middlewares:
+        - name: forward-auth
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: forward-auth
+spec:
+  headers:
+    customRequestHeaders:
+      X-Forwarded-For: ""

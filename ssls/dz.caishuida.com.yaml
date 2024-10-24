@@ -1,0 +1,17 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: dz.caishuida.com
+  namespace: csd
+spec:
+  entryPoints:
+    - web
+    - websecure
+  tls:
+    secretName: origindz.caishuida.com-secret
+  routes:
+    - match: Host(`dz.caishuida.com`)
+      kind: Rule
+      services:
+        - name: nginxgateway-service
+          port: 80
