@@ -50,16 +50,62 @@ obclient  -h${DB_HOST} -u${DB_USER} -P${DB_PORT} -p${DB_PASSWORD} -c -A ${DB_NAM
 #./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant-fp' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant-fp
 #./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-nacos' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-nacos
 
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D hello  --ddl --sql --all -f sqls/hello &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-meta  --ddl --sql --all -f sqls/ncloud-global-meta &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-org  --ddl --sql --all -f sqls/ncloud-global-org &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-template  --ddl --sql --all -f sqls/ncloud-global-template &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant  --ddl --sql --all -f sqls/ncloud-global-tenant &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant01  --ddl --sql --all -f sqls/ncloud-global-tenant01 &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant01-fp  --ddl --sql --all -f sqls/ncloud-global-tenant01-fp &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant02  --ddl --sql --all -f sqls/ncloud-global-tenant02 &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant02-fp  --ddl --sql --all -f sqls/ncloud-global-tenant02-fp &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant03  --ddl --sql --all -f sqls/ncloud-global-tenant03 &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant03-fp  --ddl --sql --all -f sqls/ncloud-global-tenant03-fp &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant-fp  --ddl --sql --all -f sqls/ncloud-global-tenant-fp &
-/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-nacos  --ddl --sql --all -f sqls/ncloud-nacos &
+
+echo "正在并发处理导入数据任务..."
+
+# 存储所有后台进程的PID
+pids=()
+
+# 执行所有的obloader命令并保存PID
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D hello --ddl --sql --all -f sqls/hello &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-meta --ddl --sql --all -f sqls/ncloud-global-meta &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-org --ddl --sql --all -f sqls/ncloud-global-org &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-template --ddl --sql --all -f sqls/ncloud-global-template &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant --ddl --sql --all -f sqls/ncloud-global-tenant &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant01 --ddl --sql --all -f sqls/ncloud-global-tenant01 &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant01-fp --ddl --sql --all -f sqls/ncloud-global-tenant01-fp &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant02 --ddl --sql --all -f sqls/ncloud-global-tenant02 &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant02-fp --ddl --sql --all -f sqls/ncloud-global-tenant02-fp &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant03 --ddl --sql --all -f sqls/ncloud-global-tenant03 &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant03-fp --ddl --sql --all -f sqls/ncloud-global-tenant03-fp &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-global-tenant-fp --ddl --sql --all -f sqls/ncloud-global-tenant-fp &
+pids+=($!)
+
+/app/ob-loader-dumper-4.3.1.1-RELEASE/bin/obloader -h${DB_HOST} -P${DB_PORT} -u${DB_USER} -p${DB_PASSWORD} --sys-user root --sys-password ${DB_PASSWORD} -D ncloud-nacos --ddl --sql --all -f sqls/ncloud-nacos &
+pids+=($!)
+
+# 等待所有后台进程完成
+echo "等待所有导入任务完成..."
+for pid in ${pids[@]}; do
+    wait $pid
+    status=$?
+    if [ $status -ne 0 ]; then
+        echo "PID $pid 执行失败，退出状态码: $status"
+    else
+        echo "PID $pid 执行成功"
+    fi
+done
+
+echo "所有导入任务已完成"
