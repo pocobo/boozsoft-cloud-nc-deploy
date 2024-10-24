@@ -132,5 +132,6 @@ kubectl apply -f ssls/dz.api.caishuida.com.yaml -ncsd
 kubectl apply -f ssls/dz.caishuida.com.yaml -ncsd
 kubectl apply -f ssls/secret-origindz.caishuida.com.yaml -ncsd
 # 安装中间件
+
 helm install server-middle  ./server-middle -ncsd
 helm install csdapp  ./dz-server -ncsd
