@@ -219,6 +219,32 @@ while true; do
    fi
 done
 
+
+#!/bin/bash
+
+echo "测试MySQL连接..."
+kubectl run mysql-test --image=mysql:5.7 -n oceanbase --rm -i --restart=Never -- bash -c '
+while true; do
+   if mysql -h192.168.199.169 -P30883 -uroot@sys -prootpass -e "SELECT 1" &>/dev/null; then
+       echo "MySQL connection successful!"
+       exit 0
+   else
+       echo "Waiting for MySQL to be accessible..."
+       sleep 5
+   fi
+done'
+
+# 等待测试结果
+echo "等待MySQL连接测试结果..."
+while true; do
+   if kubectl logs mysql-test -n oceanbase 2>/dev/null | grep "MySQL connection successful!" > /dev/null; then
+       echo "MySQL已经可以连接!"
+       break
+   fi
+   echo "等待MySQL就绪..."
+   sleep 5
+done
+
 kubectl apply -f ob-deploy/tenant.yaml -noceanbase
 while true; do
    STATUS=$(kubectl get obtenant -n oceanbase -o jsonpath='{.items[0].status.status}' 2>/dev/null)
