@@ -1,0 +1,822 @@
+2024-10-24 06:43:36 [INFO] Trying to establish JDBC connection to `root@csddev#csddevob`...
+2024-10-24 06:43:36 [INFO] Server Mode: OBMYSQL-4.2.3.0
+2024-10-24 06:43:36 [INFO] Querying `VIEW` definitions...
+2024-10-24 06:43:36 [WARN] No VIEW were found in "hello"
+2024-10-24 06:43:36 [INFO] Querying `SEQUENCE` definitions...
+2024-10-24 06:43:36 [WARN] No SEQUENCE were found in "hello"
+2024-10-24 06:43:36 [INFO] Querying `TABLE_GROUP` definitions...
+2024-10-24 06:43:36 [WARN] No TABLEGROUP are exist in the tenant: "csddev"
+2024-10-24 06:43:36 [INFO] Querying `FUNCTION` definitions...
+2024-10-24 06:43:36 [WARN] No FUNCTION were found in "hello"
+2024-10-24 06:43:36 [INFO] Querying `PROCEDURE` definitions...
+2024-10-24 06:43:36 [WARN] No PROCEDURE were found in "hello"
+2024-10-24 06:43:36 [INFO] Querying table column metadata, this might take a while...
+2024-10-24 06:43:36 [INFO] Filtering out empty tables...
+2024-10-24 06:43:37 [INFO] Found 28 empty tables before executing. Elapsed: 1.074 s
+2024-10-24 06:43:37 [INFO] Generate 1 dump tasks finished. Total Elapsed: 2.075 ms
+2024-10-24 06:43:37 [INFO] Start 32 schema dump threads for 1 dump tasks finished.
+2024-10-24 06:43:37 [INFO] Query TABLE schema success. DbType: OBMYSQL Version: 4.2.3.0
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_cron_triggers to "sqls/hello/data/hello/TABLE/qrtz_cron_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_fill_rule to "sqls/hello/data/hello/TABLE/sys_fill_rule-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_enhance_sql to "sqls/hello/data/hello/TABLE/onl_cgform_enhance_sql-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_order_customer to "sqls/hello/data/hello/TABLE/test_order_customer-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_role to "sqls/hello/data/hello/TABLE/sys_role-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_files to "sqls/hello/data/hello/TABLE/sys_files-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] s30 to "sqls/hello/data/hello/TABLE/s30-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r11 to "sqls/hello/data/hello/TABLE/r11-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r16 to "sqls/hello/data/hello/TABLE/r16-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r14 to "sqls/hello/data/hello/TABLE/r14-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r15 to "sqls/hello/data/hello/TABLE/r15-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r12 to "sqls/hello/data/hello/TABLE/r12-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_v3_hello to "sqls/hello/data/hello/TABLE/test_v3_hello-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r13 to "sqls/hello/data/hello/TABLE/r13-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r17 to "sqls/hello/data/hello/TABLE/r17-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user_depart_copy1 to "sqls/hello/data/hello/TABLE/sys_user_depart_copy1-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r18 to "sqls/hello/data/hello/TABLE/r18-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] oss_file to "sqls/hello/data/hello/TABLE/oss_file-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] ceshi_note to "sqls/hello/data/hello/TABLE/ceshi_note-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user to "sqls/hello/data/hello/TABLE/sys_user-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_blob_triggers to "sqls/hello/data/hello/TABLE/qrtz_blob_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_paused_trigger_grps to "sqls/hello/data/hello/TABLE/qrtz_paused_trigger_grps-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_calendars to "sqls/hello/data/hello/TABLE/qrtz_calendars-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_simple_triggers to "sqls/hello/data/hello/TABLE/qrtz_simple_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_field to "sqls/hello/data/hello/TABLE/onl_cgform_field-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r20 to "sqls/hello/data/hello/TABLE/r20-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] hello77 to "sqls/hello/data/hello/TABLE/hello77-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user_tenant to "sqls/hello/data/hello/TABLE/sys_user_tenant-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jeecg_project_nature_income to "sqls/hello/data/hello/TABLE/jeecg_project_nature_income-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_locks to "sqls/hello/data/hello/TABLE/qrtz_locks-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_page to "sqls/hello/data/hello/TABLE/onl_drag_page-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_category to "sqls/hello/data/hello/TABLE/sys_category-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_enhance_select to "sqls/hello/data/hello/TABLE/test_enhance_select-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_log0 to "sqls/hello/data/hello/TABLE/sys_log0-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_dict to "sqls/hello/data/hello/TABLE/sys_dict-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_auth_page to "sqls/hello/data/hello/TABLE/onl_auth_page-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_depart_role_permission to "sqls/hello/data/hello/TABLE/sys_depart_role_permission-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_quartz_job to "sqls/hello/data/hello/TABLE/sys_quartz_job-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_dataset_param to "sqls/hello/data/hello/TABLE/onl_drag_dataset_param-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_order_product to "sqls/hello/data/hello/TABLE/test_order_product-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_triggers to "sqls/hello/data/hello/TABLE/qrtz_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_third_account to "sqls/hello/data/hello/TABLE/sys_third_account-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] tmp_report_data_income to "sqls/hello/data/hello/TABLE/tmp_report_data_income-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_auth_data to "sqls/hello/data/hello/TABLE/onl_auth_data-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_button to "sqls/hello/data/hello/TABLE/onl_cgform_button-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_dict_item to "sqls/hello/data/hello/TABLE/jimu_dict_item-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] rep_demo_jianpiao to "sqls/hello/data/hello/TABLE/rep_demo_jianpiao-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_permission_v2 to "sqls/hello/data/hello/TABLE/sys_permission_v2-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgreport_head to "sqls/hello/data/hello/TABLE/onl_cgreport_head-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jeecg_monthly_growth_analysis to "sqls/hello/data/hello/TABLE/jeecg_monthly_growth_analysis-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_simprop_triggers to "sqls/hello/data/hello/TABLE/qrtz_simprop_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_position to "sqls/hello/data/hello/TABLE/sys_position-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] r19 to "sqls/hello/data/hello/TABLE/r19-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_dict to "sqls/hello/data/hello/TABLE/jimu_dict-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] joa_demo to "sqls/hello/data/hello/TABLE/joa_demo-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_form_file to "sqls/hello/data/hello/TABLE/sys_form_file-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_map to "sqls/hello/data/hello/TABLE/jimu_report_map-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jeecg_order_ticket to "sqls/hello/data/hello/TABLE/jeecg_order_ticket-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_tenant_pack_perms to "sqls/hello/data/hello/TABLE/sys_tenant_pack_perms-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jeecg_order_customer to "sqls/hello/data/hello/TABLE/jeecg_order_customer-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_index to "sqls/hello/data/hello/TABLE/onl_cgform_index-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_db_field to "sqls/hello/data/hello/TABLE/jimu_report_db_field-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_depart_role_user to "sqls/hello/data/hello/TABLE/sys_depart_role_user-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_depart_role to "sqls/hello/data/hello/TABLE/sys_depart_role-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_dataset_item to "sqls/hello/data/hello/TABLE/onl_drag_dataset_item-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] hello2 to "sqls/hello/data/hello/TABLE/hello2-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user_role to "sqls/hello/data/hello/TABLE/sys_user_role-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_data_source to "sqls/hello/data/hello/TABLE/sys_data_source-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_comp to "sqls/hello/data/hello/TABLE/onl_drag_comp-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_announcement to "sqls/hello/data/hello/TABLE/sys_announcement-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_log1 to "sqls/hello/data/hello/TABLE/sys_log1-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user_depart to "sqls/hello/data/hello/TABLE/sys_user_depart-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_auth_relation to "sqls/hello/data/hello/TABLE/onl_auth_relation-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_db_param to "sqls/hello/data/hello/TABLE/jimu_report_db_param-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] x1 to "sqls/hello/data/hello/TABLE/x1-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] x2 to "sqls/hello/data/hello/TABLE/x2-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_dict_item to "sqls/hello/data/hello/TABLE/sys_dict_item-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_head to "sqls/hello/data/hello/TABLE/onl_cgform_head-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_enhance_js to "sqls/hello/data/hello/TABLE/onl_cgform_enhance_js-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_db to "sqls/hello/data/hello/TABLE/jimu_report_db-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgform_enhance_java to "sqls/hello/data/hello/TABLE/onl_cgform_enhance_java-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] helloci to "sqls/hello/data/hello/TABLE/helloci-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] task_date to "sqls/hello/data/hello/TABLE/task_date-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_permission_data_rule to "sqls/hello/data/hello/TABLE/sys_permission_data_rule-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_shoptype_tree to "sqls/hello/data/hello/TABLE/test_shoptype_tree-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_announcement_send to "sqls/hello/data/hello/TABLE/sys_announcement_send-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_sms_template to "sqls/hello/data/hello/TABLE/sys_sms_template-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_user_agent to "sqls/hello/data/hello/TABLE/sys_user_agent-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_tenant_pack to "sqls/hello/data/hello/TABLE/sys_tenant_pack-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_depart_permission to "sqls/hello/data/hello/TABLE/sys_depart_permission-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] demo_field_def_val_main to "sqls/hello/data/hello/TABLE/demo_field_def_val_main-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_depart to "sqls/hello/data/hello/TABLE/sys_depart-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_check_rule to "sqls/hello/data/hello/TABLE/sys_check_rule-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_gateway_route to "sqls/hello/data/hello/TABLE/sys_gateway_route-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_fired_triggers to "sqls/hello/data/hello/TABLE/qrtz_fired_triggers-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgreport_param to "sqls/hello/data/hello/TABLE/onl_cgreport_param-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_scheduler_state to "sqls/hello/data/hello/TABLE/qrtz_scheduler_state-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_permission to "sqls/hello/data/hello/TABLE/sys_permission-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_share to "sqls/hello/data/hello/TABLE/jimu_report_share-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] tmp_report_data_1 to "sqls/hello/data/hello/TABLE/tmp_report_data_1-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_link to "sqls/hello/data/hello/TABLE/jimu_report_link-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_role_permission to "sqls/hello/data/hello/TABLE/sys_role_permission-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_comment to "sqls/hello/data/hello/TABLE/sys_comment-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] rep_demo_employee to "sqls/hello/data/hello/TABLE/rep_demo_employee-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_sms to "sqls/hello/data/hello/TABLE/sys_sms-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_dataset_head to "sqls/hello/data/hello/TABLE/onl_drag_dataset_head-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report_data_source to "sqls/hello/data/hello/TABLE/jimu_report_data_source-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] rep_demo_dxtj to "sqls/hello/data/hello/TABLE/rep_demo_dxtj-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_drag_page_comp to "sqls/hello/data/hello/TABLE/onl_drag_page_comp-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_order_main to "sqls/hello/data/hello/TABLE/test_order_main-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] demo_field_def_val_sub to "sqls/hello/data/hello/TABLE/demo_field_def_val_sub-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_demo to "sqls/hello/data/hello/TABLE/test_demo-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] qrtz_job_details to "sqls/hello/data/hello/TABLE/qrtz_job_details-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_data_log to "sqls/hello/data/hello/TABLE/sys_data_log-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] test_note to "sqls/hello/data/hello/TABLE/test_note-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] rep_demo_gongsi to "sqls/hello/data/hello/TABLE/rep_demo_gongsi-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_tenant_pack_user to "sqls/hello/data/hello/TABLE/sys_tenant_pack_user-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_role_index to "sqls/hello/data/hello/TABLE/sys_role_index-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] demo to "sqls/hello/data/hello/TABLE/demo-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] onl_cgreport_item to "sqls/hello/data/hello/TABLE/onl_cgreport_item-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_log to "sqls/hello/data/hello/TABLE/sys_log-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jimu_report to "sqls/hello/data/hello/TABLE/jimu_report-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] jeecg_order_main to "sqls/hello/data/hello/TABLE/jeecg_order_main-schema.sql " finished
+2024-10-24 06:43:39 [INFO] Dump [TABLE] sys_tenant to "sqls/hello/data/hello/TABLE/sys_tenant-schema.sql " finished
+2024-10-24 06:43:39 [INFO] ----------	Finished Tasks: 1	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:43:39 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |          sys_files           |            1 -> 1            |      SUCCESS       
+         2          |       TABLE        |          jimu_dict           |            1 -> 1            |      SUCCESS       
+         3          |       TABLE        |      qrtz_cron_triggers      |            1 -> 1            |      SUCCESS       
+         4          |       TABLE        |        sys_fill_rule         |            1 -> 1            |      SUCCESS       
+         5          |       TABLE        |    onl_cgform_enhance_sql    |            1 -> 1            |      SUCCESS       
+         6          |       TABLE        |           sys_role           |            1 -> 1            |      SUCCESS       
+         7          |       TABLE        |     test_order_customer      |            1 -> 1            |      SUCCESS       
+         8          |       TABLE        |             s30              |            1 -> 1            |      SUCCESS       
+         9          |       TABLE        |             r12              |            1 -> 1            |      SUCCESS       
+         10         |       TABLE        |             r11              |            1 -> 1            |      SUCCESS       
+         11         |       TABLE        |             r14              |            1 -> 1            |      SUCCESS       
+         12         |       TABLE        |             r13              |            1 -> 1            |      SUCCESS       
+         13         |       TABLE        |             r16              |            1 -> 1            |      SUCCESS       
+         14         |       TABLE        |        test_v3_hello         |            1 -> 1            |      SUCCESS       
+         15         |       TABLE        |             r15              |            1 -> 1            |      SUCCESS       
+         16         |       TABLE        |             r18              |            1 -> 1            |      SUCCESS       
+         17         |       TABLE        |             r17              |            1 -> 1            |      SUCCESS       
+         18         |       TABLE        |           oss_file           |            1 -> 1            |      SUCCESS       
+         19         |       TABLE        |      qrtz_blob_triggers      |            1 -> 1            |      SUCCESS       
+         20         |       TABLE        |             r19              |            1 -> 1            |      SUCCESS       
+         21         |       TABLE        |        qrtz_triggers         |            1 -> 1            |      SUCCESS       
+         22         |       TABLE        |       onl_cgform_field       |            1 -> 1            |      SUCCESS       
+         23         |       TABLE        |      test_order_product      |            1 -> 1            |      SUCCESS       
+         24         |       TABLE        |       jimu_report_map        |            1 -> 1            |      SUCCESS       
+         25         |       TABLE        |     qrtz_simple_triggers     |            1 -> 1            |      SUCCESS       
+         26         |       TABLE        |      sys_third_account       |            1 -> 1            |      SUCCESS       
+         27         |       TABLE        |      onl_cgform_button       |            1 -> 1            |      SUCCESS       
+         28         |       TABLE        |             r20              |            1 -> 1            |      SUCCESS       
+         29         |       TABLE        |           hello77            |            1 -> 1            |      SUCCESS       
+         30         |       TABLE        |       sys_user_tenant        |            1 -> 1            |      SUCCESS       
+         31         |       TABLE        |          qrtz_locks          |            1 -> 1            |      SUCCESS       
+         32         |       TABLE        |        onl_drag_page         |            1 -> 1            |      SUCCESS       
+         33         |       TABLE        |      sys_permission_v2       |            1 -> 1            |      SUCCESS       
+         34         |       TABLE        |           sys_log1           |            1 -> 1            |      SUCCESS       
+         35         |       TABLE        |           sys_log0           |            1 -> 1            |      SUCCESS       
+         36         |       TABLE        |        sys_dict_item         |            1 -> 1            |      SUCCESS       
+         37         |       TABLE        |           sys_dict           |            1 -> 1            |      SUCCESS       
+         38         |       TABLE        |  sys_depart_role_permission  |            1 -> 1            |      SUCCESS       
+         39         |       TABLE        |    onl_drag_dataset_param    |            1 -> 1            |      SUCCESS       
+         40         |       TABLE        |          ceshi_note          |            1 -> 1            |      SUCCESS       
+         41         |       TABLE        |       onl_cgform_index       |            1 -> 1            |      SUCCESS       
+         42         |       TABLE        |        sys_quartz_job        |            1 -> 1            |      SUCCESS       
+         43         |       TABLE        |     jimu_report_db_field     |            1 -> 1            |      SUCCESS       
+         44         |       TABLE        |     jeecg_order_customer     |            1 -> 1            |      SUCCESS       
+         45         |       TABLE        |           sys_user           |            1 -> 1            |      SUCCESS       
+         46         |       TABLE        |    sys_user_depart_copy1     |            1 -> 1            |      SUCCESS       
+         47         |       TABLE        |        qrtz_calendars        |            1 -> 1            |      SUCCESS       
+         48         |       TABLE        |        onl_auth_data         |            1 -> 1            |      SUCCESS       
+         49         |       TABLE        |    tmp_report_data_income    |            1 -> 1            |      SUCCESS       
+         50         |       TABLE        |   qrtz_paused_trigger_grps   |            1 -> 1            |      SUCCESS       
+         51         |       TABLE        |        sys_user_role         |            1 -> 1            |      SUCCESS       
+         52         |       TABLE        |      onl_cgreport_head       |            1 -> 1            |      SUCCESS       
+         53         |       TABLE        |       sys_data_source        |            1 -> 1            |      SUCCESS       
+         54         |       TABLE        |jeecg_monthly_growth_analysis |            1 -> 1            |      SUCCESS       
+         55         |       TABLE        |     jimu_report_db_param     |            1 -> 1            |      SUCCESS       
+         56         |       TABLE        | jeecg_project_nature_income  |            1 -> 1            |      SUCCESS       
+         57         |       TABLE        |         sys_category         |            1 -> 1            |      SUCCESS       
+         58         |       TABLE        |     test_enhance_select      |            1 -> 1            |      SUCCESS       
+         59         |       TABLE        |    qrtz_simprop_triggers     |            1 -> 1            |      SUCCESS       
+         60         |       TABLE        |   onl_cgform_enhance_java    |            1 -> 1            |      SUCCESS       
+         61         |       TABLE        |         sys_position         |            1 -> 1            |      SUCCESS       
+         62         |       TABLE        |        onl_auth_page         |            1 -> 1            |      SUCCESS       
+         63         |       TABLE        |           joa_demo           |            1 -> 1            |      SUCCESS       
+         64         |       TABLE        |         sys_comment          |            1 -> 1            |      SUCCESS       
+         65         |       TABLE        |        sys_form_file         |            1 -> 1            |      SUCCESS       
+         66         |       TABLE        |           sys_sms            |            1 -> 1            |      SUCCESS       
+         67         |       TABLE        |         sys_data_log         |            1 -> 1            |      SUCCESS       
+         68         |       TABLE        |      jeecg_order_ticket      |            1 -> 1            |      SUCCESS       
+         69         |       TABLE        |    sys_tenant_pack_perms     |            1 -> 1            |      SUCCESS       
+         70         |       TABLE        |     sys_depart_role_user     |            1 -> 1            |      SUCCESS       
+         71         |       TABLE        |    onl_drag_dataset_item     |            1 -> 1            |      SUCCESS       
+         72         |       TABLE        |            hello2            |            1 -> 1            |      SUCCESS       
+         73         |       TABLE        |       sys_sms_template       |            1 -> 1            |      SUCCESS       
+         74         |       TABLE        |      rep_demo_jianpiao       |            1 -> 1            |      SUCCESS       
+         75         |       TABLE        |        jimu_dict_item        |            1 -> 1            |      SUCCESS       
+         76         |       TABLE        |        onl_drag_comp         |            1 -> 1            |      SUCCESS       
+         77         |       TABLE        |    sys_depart_permission     |            1 -> 1            |      SUCCESS       
+         78         |       TABLE        |      onl_cgreport_item       |            1 -> 1            |      SUCCESS       
+         79         |       TABLE        |       sys_announcement       |            1 -> 1            |      SUCCESS       
+         80         |       TABLE        |       sys_user_depart        |            1 -> 1            |      SUCCESS       
+         81         |       TABLE        |      onl_auth_relation       |            1 -> 1            |      SUCCESS       
+         82         |       TABLE        |              x1              |            1 -> 1            |      SUCCESS       
+         83         |       TABLE        |              x2              |            1 -> 1            |      SUCCESS       
+         84         |       TABLE        |           sys_log            |            1 -> 1            |      SUCCESS       
+         85         |       TABLE        |       onl_cgform_head        |            1 -> 1            |      SUCCESS       
+         86         |       TABLE        |        jimu_report_db        |            1 -> 1            |      SUCCESS       
+         87         |       TABLE        |    onl_cgform_enhance_js     |            1 -> 1            |      SUCCESS       
+         88         |       TABLE        |           helloci            |            1 -> 1            |      SUCCESS       
+         89         |       TABLE        |   sys_permission_data_rule   |            1 -> 1            |      SUCCESS       
+         90         |       TABLE        |      test_shoptype_tree      |            1 -> 1            |      SUCCESS       
+         91         |       TABLE        |      tmp_report_data_1       |            1 -> 1            |      SUCCESS       
+         92         |       TABLE        |       sys_depart_role        |            1 -> 1            |      SUCCESS       
+         93         |       TABLE        |    sys_announcement_send     |            1 -> 1            |      SUCCESS       
+         94         |       TABLE        |        sys_user_agent        |            1 -> 1            |      SUCCESS       
+         95         |       TABLE        |       sys_tenant_pack        |            1 -> 1            |      SUCCESS       
+         96         |       TABLE        |             demo             |            1 -> 1            |      SUCCESS       
+         97         |       TABLE        |   demo_field_def_val_main    |            1 -> 1            |      SUCCESS       
+         98         |       TABLE        |        sys_check_rule        |            1 -> 1            |      SUCCESS       
+         99         |       TABLE        |          test_demo           |            1 -> 1            |      SUCCESS       
+        100         |       TABLE        |         jimu_report          |            1 -> 1            |      SUCCESS       
+        101         |       TABLE        |      sys_gateway_route       |            1 -> 1            |      SUCCESS       
+        102         |       TABLE        |          test_note           |            1 -> 1            |      SUCCESS       
+        103         |       TABLE        |      onl_cgreport_param      |            1 -> 1            |      SUCCESS       
+        104         |       TABLE        |     qrtz_scheduler_state     |            1 -> 1            |      SUCCESS       
+        105         |       TABLE        |      jimu_report_share       |            1 -> 1            |      SUCCESS       
+        106         |       TABLE        |        sys_permission        |            1 -> 1            |      SUCCESS       
+        107         |       TABLE        |       jimu_report_link       |            1 -> 1            |      SUCCESS       
+        108         |       TABLE        |     sys_role_permission      |            1 -> 1            |      SUCCESS       
+        109         |       TABLE        |          task_date           |            1 -> 1            |      SUCCESS       
+        110         |       TABLE        |      rep_demo_employee       |            1 -> 1            |      SUCCESS       
+        111         |       TABLE        |    onl_drag_dataset_head     |            1 -> 1            |      SUCCESS       
+        112         |       TABLE        |   jimu_report_data_source    |            1 -> 1            |      SUCCESS       
+        113         |       TABLE        |      onl_drag_page_comp      |            1 -> 1            |      SUCCESS       
+        114         |       TABLE        |        rep_demo_dxtj         |            1 -> 1            |      SUCCESS       
+        115         |       TABLE        |       test_order_main        |            1 -> 1            |      SUCCESS       
+        116         |       TABLE        |    demo_field_def_val_sub    |            1 -> 1            |      SUCCESS       
+        117         |       TABLE        |       qrtz_job_details       |            1 -> 1            |      SUCCESS       
+        118         |       TABLE        |          sys_depart          |            1 -> 1            |      SUCCESS       
+        119         |       TABLE        |       jeecg_order_main       |            1 -> 1            |      SUCCESS       
+        120         |       TABLE        |     qrtz_fired_triggers      |            1 -> 1            |      SUCCESS       
+        121         |       TABLE        |       rep_demo_gongsi        |            1 -> 1            |      SUCCESS       
+        122         |       TABLE        |        sys_role_index        |            1 -> 1            |      SUCCESS       
+        123         |       TABLE        |     sys_tenant_pack_user     |            1 -> 1            |      SUCCESS       
+        124         |       TABLE        |          sys_tenant          |            1 -> 1            |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 124		End Time: 2024-10-24 06:43:39
+
+
+2024-10-24 06:43:39 [INFO] Dump schema finished. Total Elapsed: 2.021 s
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_files"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "s30"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "test_order_customer"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "test_v3_hello"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_user_tenant"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_log0"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_cgform_enhance_sql"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_drag_page_comp"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_tenant_pack_user"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_log1"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_drag_page"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_permission_v2"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_permission"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "test_order_product"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_cgform_field"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "rep_demo_employee"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_quartz_job"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_cgform_button"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_role"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_check_rule"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_announcement_send"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_cgform_index"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "test_demo"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_drag_dataset_param"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_cgform_head"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "onl_drag_dataset_head"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "qrtz_scheduler_state"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_gateway_route"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "test_note"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_tenant"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "demo_field_def_val_main"...
+2024-10-24 06:43:39 [INFO] Querying table entry for: "sys_depart"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_dataset_param"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_enhance_sql"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_v3_hello"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_check_rule"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user_tenant"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_index"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_permission_v2"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_announcement_send"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_quartz_job"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_button"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_files"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_demo"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_page_comp"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_order_customer"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_log0"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_role"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_order_product"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "s30"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_field"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_page"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "qrtz_scheduler_state"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_log1"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_head"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_tenant"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_note"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_depart"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_tenant_pack_user"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "rep_demo_employee"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_gateway_route"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_permission"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "demo_field_def_val_main"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_dataset_head"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "tmp_report_data_1"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r20"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_report_data_source"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "rep_demo_gongsi"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jeecg_order_ticket"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_role_index"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jeecg_order_main"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "test_shoptype_tree"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "rep_demo_jianpiao"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r19"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r18"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "test_order_main"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r13"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r12"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r11"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "demo"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_cgreport_param"...
+2024-10-24 06:43:40 [INFO] Querying unique key(with non-null columns) for table "sys_announcement_send"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r17"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r16"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r15"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "r14"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_sms_template"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_drag_dataset_item"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_auth_page"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "test_enhance_select"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_drag_comp"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_cgform_enhance_js"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_report_data_source"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jeecg_project_nature_income"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r20"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "tmp_report_data_1"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jeecg_order_ticket"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "demo_field_def_val_sub"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_role_index"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jeecg_order_main"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_shoptype_tree"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "rep_demo_gongsi"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "rep_demo_dxtj"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "rep_demo_jianpiao"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r18"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_auth_data"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r13"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_order_main"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r12"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jeecg_project_nature_income"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r17"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r11"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r19"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "demo"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r16"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r15"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "r14"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_sms_template"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_dataset_item"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_auth_page"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_drag_comp"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "test_enhance_select"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgform_enhance_js"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgreport_param"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_role_permission"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "demo_field_def_val_sub"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "rep_demo_dxtj"...
+2024-10-24 06:43:40 [INFO] Querying unique key(with non-null columns) for table "tmp_report_data_1"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_auth_data"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_position"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_log"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_dict_item"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_announcement"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_report_db"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_report_db_field"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_user_depart"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_report"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_dict_item"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_sms"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_form_file"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_user_agent"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_data_log"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_comment"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_user_depart_copy1"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "ceshi_note"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_role_permission"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_dict"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_user"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "x1"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "x2"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_category"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_position"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "qrtz_locks"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_cgreport_head"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jeecg_order_customer"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_user_role"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jeecg_monthly_growth_analysis"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_dict_item"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_data_source"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "onl_cgreport_item"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_report_db_param"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_report_db_field"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_announcement"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_report_db"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_log"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user_depart"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_report"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_sms"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "x2"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_form_file"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user_agent"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_comment"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_data_log"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user_depart_copy1"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "ceshi_note"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_dict"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "x1"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_dict_item"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_user_role"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "qrtz_locks"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgreport_head"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jeecg_order_customer"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jeecg_monthly_growth_analysis"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "sys_fill_rule"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_data_source"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "tmp_report_data_income"...
+2024-10-24 06:43:40 [INFO] Querying table entry for: "jimu_dict"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "onl_cgreport_item"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_report_db_param"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_category"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "sys_fill_rule"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "tmp_report_data_income"...
+2024-10-24 06:43:40 [INFO] Querying primary key for table "jimu_dict"...
+2024-10-24 06:43:40 [INFO] Querying unique key(with non-null columns) for table "tmp_report_data_income"...
+2024-10-24 06:43:40 [INFO] Query all table entries success. Elapsed: 850.0 ms
+2024-10-24 06:43:40 [INFO] Generating sub-tasks by partitions and primary/unique keys...
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r16" success. Ranges: 1. Elapsed: 45.70 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "test_v3_hello" success. Ranges: 1. Elapsed: 46.42 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r11" success. Ranges: 1. Elapsed: 46.64 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r17" success. Ranges: 1. Elapsed: 46.38 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_files" success. Ranges: 1. Elapsed: 48.38 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r19" success. Ranges: 1. Elapsed: 46.72 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "s30" success. Ranges: 1. Elapsed: 48.72 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r12" success. Ranges: 1. Elapsed: 48.67 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(without primary key): "tmp_report_data_income" success. Ranges: 1
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r18" success. Ranges: 1. Elapsed: 49.17 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r13" success. Ranges: 1. Elapsed: 56.08 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_button" success. Ranges: 1. Elapsed: 54.55 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "test_order_product" success. Ranges: 1. Elapsed: 54.63 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r14" success. Ranges: 1. Elapsed: 56.16 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_fill_rule" success. Ranges: 1. Elapsed: 56.99 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "test_order_customer" success. Ranges: 1. Elapsed: 56.45 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jimu_dict" success. Ranges: 1. Elapsed: 57.08 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_enhance_sql" success. Ranges: 1. Elapsed: 56.90 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_role" success. Ranges: 1. Elapsed: 56.54 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r15" success. Ranges: 1. Elapsed: 55.85 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_field" success. Ranges: 1. Elapsed: 55.34 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "r20" success. Ranges: 1. Elapsed: 86.47 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "qrtz_locks" success. Ranges: 1. Elapsed: 86.30 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_user_tenant" success. Ranges: 1. Elapsed: 86.84 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_page" success. Ranges: 1. Elapsed: 86.76 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_log1" success. Ranges: 1. Elapsed: 86.93 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_permission_v2" success. Ranges: 1. Elapsed: 86.99 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_dict_item" success. Ranges: 1. Elapsed: 86.77 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_dict" success. Ranges: 1. Elapsed: 86.92 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_log0" success. Ranges: 1. Elapsed: 87.45 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jeecg_monthly_growth_analysis" success. Ranges: 1. Elapsed: 45.88 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_user_depart_copy1" success. Ranges: 1. Elapsed: 54.99 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_dataset_param" success. Ranges: 1. Elapsed: 100.1 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_index" success. Ranges: 1. Elapsed: 99.53 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "ceshi_note" success. Ranges: 1. Elapsed: 100.1 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_auth_data" success. Ranges: 1. Elapsed: 54.35 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_user_role" success. Ranges: 1. Elapsed: 54.18 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jimu_report_db_field" success. Ranges: 1. Elapsed: 56.11 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(without primary key): "tmp_report_data_1" success. Ranges: 1
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jeecg_order_customer" success. Ranges: 1. Elapsed: 55.97 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(without primary key): "sys_announcement_send" success. Ranges: 1
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_quartz_job" success. Ranges: 1. Elapsed: 56.58 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_user" success. Ranges: 1. Elapsed: 55.80 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_position" success. Ranges: 1. Elapsed: 73.73 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_data_source" success. Ranges: 1. Elapsed: 80.55 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jeecg_project_nature_income" success. Ranges: 1. Elapsed: 75.19 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgreport_head" success. Ranges: 1. Elapsed: 82.97 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jimu_report_db_param" success. Ranges: 1. Elapsed: 75.22 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "test_enhance_select" success. Ranges: 1. Elapsed: 75.16 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_auth_page" success. Ranges: 1. Elapsed: 75.06 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_comment" success. Ranges: 1. Elapsed: 75.24 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_category" success. Ranges: 1. Elapsed: 75.13 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_sms" success. Ranges: 1. Elapsed: 87.92 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_form_file" success. Ranges: 1. Elapsed: 87.96 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jeecg_order_ticket" success. Ranges: 1. Elapsed: 56.51 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgreport_item" success. Ranges: 1. Elapsed: 55.86 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_sms_template" success. Ranges: 1. Elapsed: 56.35 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "demo" success. Ranges: 1. Elapsed: 42.11 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_dataset_item" success. Ranges: 1. Elapsed: 56.90 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jimu_report_db" success. Ranges: 1. Elapsed: 42.61 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_comp" success. Ranges: 1. Elapsed: 56.33 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "jimu_dict_item" success. Ranges: 1. Elapsed: 57.49 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_data_log" success. Ranges: 1. Elapsed: 89.43 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_log" success. Ranges: 1. Elapsed: 44.69 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "x2" success. Ranges: 1. Elapsed: 70.57 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "x1" success. Ranges: 1. Elapsed: 70.65 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_head" success. Ranges: 1. Elapsed: 70.74 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "rep_demo_jianpiao" success. Ranges: 1. Elapsed: 84.58 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_gateway_route" success. Ranges: 1. Elapsed: 41.99 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "sys_announcement" success. Ranges: 1. Elapsed: 84.26 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "test_shoptype_tree" success. Ranges: 1. Elapsed: 70.93 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgform_enhance_js" success. Ranges: 1. Elapsed: 71.14 ms
+2024-10-24 06:43:40 [INFO] Split rows for non-partitioned table(with primary key): "onl_cgreport_param" success. Ranges: 1. Elapsed: 42.03 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_dataset_head" success. Ranges: 1. Elapsed: 42.69 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "test_demo" success. Ranges: 1. Elapsed: 57.24 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_check_rule" success. Ranges: 1. Elapsed: 84.60 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_user_agent" success. Ranges: 1. Elapsed: 84.83 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "rep_demo_employee" success. Ranges: 1. Elapsed: 55.90 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "test_note" success. Ranges: 1. Elapsed: 57.16 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "demo_field_def_val_main" success. Ranges: 1. Elapsed: 85.81 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_depart" success. Ranges: 1. Elapsed: 43.61 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "jimu_report" success. Ranges: 1. Elapsed: 57.89 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "test_order_main" success. Ranges: 1. Elapsed: 43.81 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_permission" success. Ranges: 1. Elapsed: 57.00 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_role_permission" success. Ranges: 1. Elapsed: 58.64 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "demo_field_def_val_sub" success. Ranges: 1. Elapsed: 69.31 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "jimu_report_data_source" success. Ranges: 1. Elapsed: 70.11 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_role_index" success. Ranges: 1. Elapsed: 68.34 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "rep_demo_dxtj" success. Ranges: 1. Elapsed: 69.79 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "jeecg_order_main" success. Ranges: 1. Elapsed: 69.70 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_user_depart" success. Ranges: 1. Elapsed: 125.2 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "qrtz_scheduler_state" success. Ranges: 1. Elapsed: 83.46 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "onl_drag_page_comp" success. Ranges: 1. Elapsed: 70.59 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "rep_demo_gongsi" success. Ranges: 1. Elapsed: 69.84 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_tenant_pack_user" success. Ranges: 1. Elapsed: 81.95 ms
+2024-10-24 06:43:41 [INFO] Split rows for non-partitioned table(with primary key): "sys_tenant" success. Ranges: 1. Elapsed: 81.33 ms
+2024-10-24 06:43:41 [INFO] Generate 124 dump tasks finished. Total Elapsed: 236.6 ms
+2024-10-24 06:43:41 [INFO] Start 32 record dump threads for 124 dump tasks finished
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r17.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r11.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r16.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/qrtz_locks.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/s30.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r14.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r13.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_log0.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_dict.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_enhance_sql.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r19.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user_depart_copy1.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jeecg_monthly_growth_analysis.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r15.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_log1.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r20.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_dict_item.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_permission_v2.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_order_customer.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_fill_rule.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_order_product.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/tmp_report_data_income.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_page.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_dict.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user_tenant.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r12.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_field.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_index.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_dataset_param.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/ceshi_note.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/tmp_report_data_1.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_auth_data.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user_role.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_quartz_job.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_data_source.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_report_db_field.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_enhance_select.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_report_db_param.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_position.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_auth_page.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgreport_head.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jeecg_order_customer.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jeecg_order_ticket.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_form_file.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_sms.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_announcement_send.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgreport_item.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_category.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_sms_template.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_comment.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_dataset_item.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_report_db.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_dict_item.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_comp.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/x2.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/rep_demo_jianpiao.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/x1.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgreport_param.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_head.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_enhance_js.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_dataset_head.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_demo.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/rep_demo_employee.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_depart.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user_agent.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_check_rule.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/demo_field_def_val_main.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_note.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_order_main.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_v3_hello.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_cgform_button.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/r18.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_files.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_role.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/demo_field_def_val_sub.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_report_data_source.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jeecg_project_nature_income.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_role_index.sql" finished.
+2024-10-24 06:43:41 [INFO] Dump data to "sqls/hello/data/hello/TABLE/rep_demo_dxtj.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/qrtz_scheduler_state.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jeecg_order_main.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_user_depart.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/demo.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/rep_demo_gongsi.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_tenant_pack_user.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_data_log.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_gateway_route.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/test_shoptype_tree.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_announcement.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_role_permission.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_tenant.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/jimu_report.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_permission.sql" finished.
+2024-10-24 06:43:42 [INFO] Dump data to "sqls/hello/data/hello/TABLE/onl_drag_page_comp.sql" finished.
+2024-10-24 06:43:46 [INFO] 
+
+Dump Performance Monitor: 
+-------------------------------------------------------------------------------------------------------
+ Dimension \ Metric |             Tps              |          Throughput          |       Buffer       
+-------------------------------------------------------------------------------------------------------
+     1.sec.avg      |     13914.26 Records/sec     |         8.46 MB/sec          |      1 Slots       
+     1.min.avg      |     13894.4 Records/sec      |         8.45 MB/sec          |      1 Slots       
+       Total        |        69712 Records         |            42 MB             |      1 Slots       
+-------------------------------------------------------------------------------------------------------
+
+
+2024-10-24 06:43:46 [INFO] Dump data to "sqls/hello/data/hello/TABLE/sys_log.sql" finished.
+2024-10-24 06:43:47 [INFO] ----------	Finished Tasks: 124	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:43:47 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |          sys_files           |              2               |      SUCCESS       
+         2          |       TABLE        |          jimu_dict           |              41              |      SUCCESS       
+         3          |       TABLE        |      qrtz_cron_triggers      |              0               |      SUCCESS       
+         4          |       TABLE        |        sys_fill_rule         |              3               |      SUCCESS       
+         5          |       TABLE        |    onl_cgform_enhance_sql    |              5               |      SUCCESS       
+         6          |       TABLE        |           sys_role           |              13              |      SUCCESS       
+         7          |       TABLE        |     test_order_customer      |              9               |      SUCCESS       
+         8          |       TABLE        |             s30              |              20              |      SUCCESS       
+         9          |       TABLE        |             r12              |             1155             |      SUCCESS       
+         10         |       TABLE        |             r11              |              36              |      SUCCESS       
+         11         |       TABLE        |             r14              |              6               |      SUCCESS       
+         12         |       TABLE        |             r13              |              1               |      SUCCESS       
+         13         |       TABLE        |        test_v3_hello         |              3               |      SUCCESS       
+         14         |       TABLE        |             r16              |              1               |      SUCCESS       
+         15         |       TABLE        |             r15              |              17              |      SUCCESS       
+         16         |       TABLE        |             r18              |              6               |      SUCCESS       
+         17         |       TABLE        |             r17              |              5               |      SUCCESS       
+         18         |       TABLE        |             r19              |              5               |      SUCCESS       
+         19         |       TABLE        |      qrtz_blob_triggers      |              0               |      SUCCESS       
+         20         |       TABLE        |           oss_file           |              0               |      SUCCESS       
+         21         |       TABLE        |        qrtz_triggers         |              0               |      SUCCESS       
+         22         |       TABLE        |       onl_cgform_field       |             1475             |      SUCCESS       
+         23         |       TABLE        |      test_order_product      |              19              |      SUCCESS       
+         24         |       TABLE        |       jimu_report_map        |              0               |      SUCCESS       
+         25         |       TABLE        |     qrtz_simple_triggers     |              0               |      SUCCESS       
+         26         |       TABLE        |      sys_third_account       |              0               |      SUCCESS       
+         27         |       TABLE        |      onl_cgform_button       |              9               |      SUCCESS       
+         28         |       TABLE        |             r20              |              13              |      SUCCESS       
+         29         |       TABLE        |           hello77            |              0               |      SUCCESS       
+         30         |       TABLE        |       sys_user_tenant        |             3654             |      SUCCESS       
+         31         |       TABLE        |          qrtz_locks          |              2               |      SUCCESS       
+         32         |       TABLE        |        onl_drag_page         |              24              |      SUCCESS       
+         33         |       TABLE        |      sys_permission_v2       |             194              |      SUCCESS       
+         34         |       TABLE        |           sys_log1           |              27              |      SUCCESS       
+         35         |       TABLE        |           sys_log0           |              16              |      SUCCESS       
+         36         |       TABLE        |        sys_dict_item         |             182              |      SUCCESS       
+         37         |       TABLE        |           sys_dict           |              51              |      SUCCESS       
+         38         |       TABLE        |  sys_depart_role_permission  |              0               |      SUCCESS       
+         39         |       TABLE        |    onl_drag_dataset_param    |              5               |      SUCCESS       
+         40         |       TABLE        |          ceshi_note          |              1               |      SUCCESS       
+         41         |       TABLE        |       onl_cgform_index       |              5               |      SUCCESS       
+         42         |       TABLE        |        sys_quartz_job        |              3               |      SUCCESS       
+         43         |       TABLE        |     jimu_report_db_field     |             540              |      SUCCESS       
+         44         |       TABLE        |     jeecg_order_customer     |              62              |      SUCCESS       
+         45         |       TABLE        |           sys_user           |              45              |      SUCCESS       
+         46         |       TABLE        |    sys_user_depart_copy1     |              51              |      SUCCESS       
+         47         |       TABLE        |        qrtz_calendars        |              0               |      SUCCESS       
+         48         |       TABLE        |        onl_auth_data         |              1               |      SUCCESS       
+         49         |       TABLE        |    tmp_report_data_income    |              5               |      SUCCESS       
+         50         |       TABLE        |   qrtz_paused_trigger_grps   |              0               |      SUCCESS       
+         51         |       TABLE        |        sys_user_role         |              56              |      SUCCESS       
+         52         |       TABLE        |      onl_cgreport_head       |              5               |      SUCCESS       
+         53         |       TABLE        |       sys_data_source        |              1               |      SUCCESS       
+         54         |       TABLE        |jeecg_monthly_growth_analysis |              24              |      SUCCESS       
+         55         |       TABLE        |     jimu_report_db_param     |              25              |      SUCCESS       
+         56         |       TABLE        | jeecg_project_nature_income  |              8               |      SUCCESS       
+         57         |       TABLE        |         sys_category         |              29              |      SUCCESS       
+         58         |       TABLE        |     test_enhance_select      |              7               |      SUCCESS       
+         59         |       TABLE        |   onl_cgform_enhance_java    |              0               |      SUCCESS       
+         60         |       TABLE        |    qrtz_simprop_triggers     |              0               |      SUCCESS       
+         61         |       TABLE        |         sys_position         |              4               |      SUCCESS       
+         62         |       TABLE        |        onl_auth_page         |              11              |      SUCCESS       
+         63         |       TABLE        |           joa_demo           |              0               |      SUCCESS       
+         64         |       TABLE        |         sys_comment          |              9               |      SUCCESS       
+         65         |       TABLE        |        sys_form_file         |              2               |      SUCCESS       
+         66         |       TABLE        |           sys_sms            |              7               |      SUCCESS       
+         67         |       TABLE        |         sys_data_log         |             207              |      SUCCESS       
+         68         |       TABLE        |      jeecg_order_ticket      |              46              |      SUCCESS       
+         69         |       TABLE        |    sys_tenant_pack_perms     |              0               |      SUCCESS       
+         70         |       TABLE        |     sys_depart_role_user     |              0               |      SUCCESS       
+         71         |       TABLE        |    onl_drag_dataset_item     |              96              |      SUCCESS       
+         72         |       TABLE        |       sys_sms_template       |              4               |      SUCCESS       
+         73         |       TABLE        |            hello2            |              0               |      SUCCESS       
+         74         |       TABLE        |      rep_demo_jianpiao       |              86              |      SUCCESS       
+         75         |       TABLE        |        jimu_dict_item        |             122              |      SUCCESS       
+         76         |       TABLE        |        onl_drag_comp         |              42              |      SUCCESS       
+         77         |       TABLE        |    sys_depart_permission     |              0               |      SUCCESS       
+         78         |       TABLE        |      onl_cgreport_item       |              39              |      SUCCESS       
+         79         |       TABLE        |       sys_announcement       |              15              |      SUCCESS       
+         80         |       TABLE        |       sys_user_depart        |              69              |      SUCCESS       
+         81         |       TABLE        |      onl_auth_relation       |              0               |      SUCCESS       
+         82         |       TABLE        |              x1              |              6               |      SUCCESS       
+         83         |       TABLE        |              x2              |              2               |      SUCCESS       
+         84         |       TABLE        |           sys_log            |            55329             |      SUCCESS       
+         85         |       TABLE        |       onl_cgform_head        |              69              |      SUCCESS       
+         86         |       TABLE        |        jimu_report_db        |              60              |      SUCCESS       
+         87         |       TABLE        |    onl_cgform_enhance_js     |              21              |      SUCCESS       
+         88         |       TABLE        |           helloci            |              0               |      SUCCESS       
+         89         |       TABLE        |   sys_permission_data_rule   |              0               |      SUCCESS       
+         90         |       TABLE        |      test_shoptype_tree      |              11              |      SUCCESS       
+         91         |       TABLE        |      tmp_report_data_1       |              12              |      SUCCESS       
+         92         |       TABLE        |    sys_announcement_send     |              14              |      SUCCESS       
+         93         |       TABLE        |       sys_depart_role        |              0               |      SUCCESS       
+         94         |       TABLE        |        sys_user_agent        |              1               |      SUCCESS       
+         95         |       TABLE        |       sys_tenant_pack        |              0               |      SUCCESS       
+         96         |       TABLE        |             demo             |              7               |      SUCCESS       
+         97         |       TABLE        |   demo_field_def_val_main    |              2               |      SUCCESS       
+         98         |       TABLE        |        sys_check_rule        |              2               |      SUCCESS       
+         99         |       TABLE        |          test_demo           |              5               |      SUCCESS       
+        100         |       TABLE        |         jimu_report          |              36              |      SUCCESS       
+        101         |       TABLE        |      sys_gateway_route       |              6               |      SUCCESS       
+        102         |       TABLE        |          test_note           |              6               |      SUCCESS       
+        103         |       TABLE        |      onl_cgreport_param      |              1               |      SUCCESS       
+        104         |       TABLE        |     qrtz_scheduler_state     |              1               |      SUCCESS       
+        105         |       TABLE        |      jimu_report_share       |              0               |      SUCCESS       
+        106         |       TABLE        |        sys_permission        |             1924             |      SUCCESS       
+        107         |       TABLE        |       jimu_report_link       |              0               |      SUCCESS       
+        108         |       TABLE        |     sys_role_permission      |             3688             |      SUCCESS       
+        109         |       TABLE        |          task_date           |              0               |      SUCCESS       
+        110         |       TABLE        |      rep_demo_employee       |              2               |      SUCCESS       
+        111         |       TABLE        |    onl_drag_dataset_head     |              26              |      SUCCESS       
+        112         |       TABLE        |   jimu_report_data_source    |              4               |      SUCCESS       
+        113         |       TABLE        |      onl_drag_page_comp      |             300              |      SUCCESS       
+        114         |       TABLE        |        rep_demo_dxtj         |              24              |      SUCCESS       
+        115         |       TABLE        |    demo_field_def_val_sub    |              8               |      SUCCESS       
+        116         |       TABLE        |       test_order_main        |              7               |      SUCCESS       
+        117         |       TABLE        |       qrtz_job_details       |              0               |      SUCCESS       
+        118         |       TABLE        |          sys_depart          |              24              |      SUCCESS       
+        119         |       TABLE        |       jeecg_order_main       |              14              |      SUCCESS       
+        120         |       TABLE        |     qrtz_fired_triggers      |              0               |      SUCCESS       
+        121         |       TABLE        |       rep_demo_gongsi        |              2               |      SUCCESS       
+        122         |       TABLE        |        sys_role_index        |              1               |      SUCCESS       
+        123         |       TABLE        |     sys_tenant_pack_user     |              1               |      SUCCESS       
+        124         |       TABLE        |          sys_tenant          |             832              |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 71074		End Time: 2024-10-24 06:43:47
+
+
+2024-10-24 06:43:47 [INFO] Dump record finished. Total Elapsed: 7.114 s
+2024-10-24 06:43:47 [INFO] System exit 0

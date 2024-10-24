@@ -1,5 +1,7 @@
-2024-10-24 04:02:49 [WARN] No VIEW were found in "hello"
-2024-10-24 04:02:49 [WARN] No SEQUENCE were found in "hello"
-2024-10-24 04:02:49 [WARN] No TABLEGROUP are exist in the tenant: "metatenant"
-2024-10-24 04:02:49 [WARN] No FUNCTION were found in "hello"
-2024-10-24 04:02:49 [WARN] No PROCEDURE were found in "hello"
+2024-10-24 06:38:06 [WARN] No TABLE were found in "ncloud-global-tenant02"
+2024-10-24 06:38:06 [WARN] No VIEW were found in "ncloud-global-tenant02"
+2024-10-24 06:38:06 [WARN] No SEQUENCE were found in "ncloud-global-tenant02"
+2024-10-24 06:38:06 [WARN] No TABLEGROUP are exist in the tenant: "csddev"
+2024-10-24 06:38:06 [WARN] No FUNCTION were found in "ncloud-global-tenant02"
+2024-10-24 06:38:06 [WARN] No PROCEDURE were found in "ncloud-global-tenant02"
+2024-10-24 06:38:06 [WARN] No tasks were generated. Check cli args and ensure at least one object exists

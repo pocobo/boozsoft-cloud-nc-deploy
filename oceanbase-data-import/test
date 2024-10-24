@@ -7,19 +7,19 @@ vmysql -h 主机地址 -u root -p database < /backup/dump.sql
 mysqldump -h 192.168.199.169 -P 30883 -u"root@metatenant#metadb" -p"rootpass" hello > /backup/dump_$(date +%Y%m%d_%H%M%S).sql > /backup/export.sh
 
 导出
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/hello
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-meta
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-org
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-template
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01-fp
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02-fp
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03-fp
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant-fp
-./obdumper -h '192.168.199.169' -P'30883' -u'root' -t'metatenant' -c'metadb' -p'rootpass' -D'hello' --ddl --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-nacos
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'hello' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/hello
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-meta' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-meta
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-org' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-org
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-template' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-template
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant01' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant01-fp' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant01-fp
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant02' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant02-fp' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant02-fp
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant03' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant03-fp' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant03-fp
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-global-tenant-fp' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-global-tenant-fp
+./obdumper -h '10.18.11.28' -P'30883' -u'root' -t'csddev' -c'csddevob' -p'SIGOOsigoo123..' -D'ncloud-nacos' --ddl --sql --all --sys-password 'rootpass' --skip-check-dir  -f sqls/ncloud-nacos
 
 
 

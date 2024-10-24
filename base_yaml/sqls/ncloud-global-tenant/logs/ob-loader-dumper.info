@@ -1,0 +1,545 @@
+2024-10-24 06:44:03 [INFO] Trying to establish JDBC connection to `root@csddev#csddevob`...
+2024-10-24 06:44:03 [INFO] Server Mode: OBMYSQL-4.2.3.0
+2024-10-24 06:44:03 [INFO] Querying `VIEW` definitions...
+2024-10-24 06:44:04 [WARN] No VIEW were found in "ncloud-global-tenant"
+2024-10-24 06:44:04 [INFO] Querying `SEQUENCE` definitions...
+2024-10-24 06:44:04 [WARN] No SEQUENCE were found in "ncloud-global-tenant"
+2024-10-24 06:44:04 [INFO] Querying `TABLE_GROUP` definitions...
+2024-10-24 06:44:04 [WARN] No TABLEGROUP are exist in the tenant: "csddev"
+2024-10-24 06:44:04 [INFO] Querying `FUNCTION` definitions...
+2024-10-24 06:44:04 [WARN] No FUNCTION were found in "ncloud-global-tenant"
+2024-10-24 06:44:04 [INFO] Querying `PROCEDURE` definitions...
+2024-10-24 06:44:04 [WARN] No PROCEDURE were found in "ncloud-global-tenant"
+2024-10-24 06:44:04 [INFO] Querying table column metadata, this might take a while...
+2024-10-24 06:44:04 [INFO] Filtering out empty tables...
+2024-10-24 06:44:05 [INFO] Found 15 empty tables before executing. Elapsed: 723.5 ms
+2024-10-24 06:44:05 [INFO] Generate 1 dump tasks finished. Total Elapsed: 1.994 ms
+2024-10-24 06:44:05 [INFO] Start 32 schema dump threads for 1 dump tasks finished.
+2024-10-24 06:44:05 [INFO] Query TABLE schema success. DbType: OBMYSQL Version: 4.2.3.0
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc117 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc117-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc50_last to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_last-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc35 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc35-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] data_queren to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/data_queren-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] fypj_img_path to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/fypj_img_path-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] tenant_queren to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/tenant_queren-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc118 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc118-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc115 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc115-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dian_pingzheng_pdf to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dian_pingzheng_pdf-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc113 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc113-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] task_sb_lc to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/task_sb_lc-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc116 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc116-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc114 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc114-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc110 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc110-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc111 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc111-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc261 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc261-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc260 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc260-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] employees to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/employees-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc29 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc29-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc16 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc16-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc25 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc25-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc19 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc19-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] auto_task_fapiao to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/auto_task_fapiao-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] employees_test3 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/employees_test3-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] employees_test1 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/employees_test1-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc106 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc106-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc109 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc109-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc107 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc107-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc102 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc102-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc103 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc103-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc28 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc28-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] grjysd_slave to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_slave-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] employees_test2 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/employees_test2-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] employees_test5 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/employees_test5-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc112 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc112-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc108 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc108-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc50_user_qichu to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_user_qichu-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc250 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc250-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] task_jilu to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/task_jilu-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc601 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc601-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc50_user to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_user-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc26 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc26-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] ndks to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/ndks-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc17 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc17-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] grjysd_type to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_type-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc13 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc13-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc15 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc15-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc14 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc14-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc72 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc72-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc21 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc21-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc104 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc104-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc20 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc20-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc60 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc60-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc282 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc282-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc281 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc281-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc280 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc280-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc105 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc105-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] grjysd_master to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_master-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] ocr_pdf to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/ocr_pdf-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] s20 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s20-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] s22 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s22-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc50 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc53 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc53-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc18 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc18-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] gz_pzkm to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/gz_pzkm-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc120 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc120-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc121 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc121-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc101 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc101-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] s21 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s21-schema.sql " finished
+2024-10-24 06:44:06 [INFO] Dump [TABLE] dc602 to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc602-schema.sql " finished
+2024-10-24 06:44:07 [INFO] ----------	Finished Tasks: 1	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:44:07 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |         data_queren          |            1 -> 1            |      SUCCESS       
+         2          |       TABLE        |        tenant_queren         |            1 -> 1            |      SUCCESS       
+         3          |       TABLE        |             dc35             |            1 -> 1            |      SUCCESS       
+         4          |       TABLE        |        fypj_img_path         |            1 -> 1            |      SUCCESS       
+         5          |       TABLE        |          dc50_last           |            1 -> 1            |      SUCCESS       
+         6          |       TABLE        |            dc117             |            1 -> 1            |      SUCCESS       
+         7          |       TABLE        |            dc118             |            1 -> 1            |      SUCCESS       
+         8          |       TABLE        |            dc115             |            1 -> 1            |      SUCCESS       
+         9          |       TABLE        |      dian_pingzheng_pdf      |            1 -> 1            |      SUCCESS       
+         10         |       TABLE        |            dc116             |            1 -> 1            |      SUCCESS       
+         11         |       TABLE        |            dc113             |            1 -> 1            |      SUCCESS       
+         12         |       TABLE        |          task_sb_lc          |            1 -> 1            |      SUCCESS       
+         13         |       TABLE        |            dc114             |            1 -> 1            |      SUCCESS       
+         14         |       TABLE        |            dc111             |            1 -> 1            |      SUCCESS       
+         15         |       TABLE        |            dc112             |            1 -> 1            |      SUCCESS       
+         16         |       TABLE        |            dc110             |            1 -> 1            |      SUCCESS       
+         17         |       TABLE        |            dc261             |            1 -> 1            |      SUCCESS       
+         18         |       TABLE        |            dc260             |            1 -> 1            |      SUCCESS       
+         19         |       TABLE        |             dc29             |            1 -> 1            |      SUCCESS       
+         20         |       TABLE        |             dc28             |            1 -> 1            |      SUCCESS       
+         21         |       TABLE        |             dc25             |            1 -> 1            |      SUCCESS       
+         22         |       TABLE        |             dc26             |            1 -> 1            |      SUCCESS       
+         23         |       TABLE        |             ndks             |            1 -> 1            |      SUCCESS       
+         24         |       TABLE        |       auto_task_fapiao       |            1 -> 1            |      SUCCESS       
+         25         |       TABLE        |         grjysd_slave         |            1 -> 1            |      SUCCESS       
+         26         |       TABLE        |       employees_test2        |            1 -> 1            |      SUCCESS       
+         27         |       TABLE        |       employees_test3        |            1 -> 1            |      SUCCESS       
+         28         |       TABLE        |       employees_test1        |            1 -> 1            |      SUCCESS       
+         29         |       TABLE        |            dc108             |            1 -> 1            |      SUCCESS       
+         30         |       TABLE        |             dc72             |            1 -> 1            |      SUCCESS       
+         31         |       TABLE        |            dc109             |            1 -> 1            |      SUCCESS       
+         32         |       TABLE        |            dc106             |            1 -> 1            |      SUCCESS       
+         33         |       TABLE        |            dc107             |            1 -> 1            |      SUCCESS       
+         34         |       TABLE        |            dc104             |            1 -> 1            |      SUCCESS       
+         35         |       TABLE        |            dc105             |            1 -> 1            |      SUCCESS       
+         36         |       TABLE        |            dc102             |            1 -> 1            |      SUCCESS       
+         37         |       TABLE        |        grjysd_master         |            1 -> 1            |      SUCCESS       
+         38         |       TABLE        |            dc103             |            1 -> 1            |      SUCCESS       
+         39         |       TABLE        |          employees           |            1 -> 1            |      SUCCESS       
+         40         |       TABLE        |            dc101             |            1 -> 1            |      SUCCESS       
+         41         |       TABLE        |       employees_test5        |            1 -> 1            |      SUCCESS       
+         42         |       TABLE        |            dc250             |            1 -> 1            |      SUCCESS       
+         43         |       TABLE        |          task_jilu           |            1 -> 1            |      SUCCESS       
+         44         |       TABLE        |          dc50_user           |            1 -> 1            |      SUCCESS       
+         45         |       TABLE        |             dc18             |            1 -> 1            |      SUCCESS       
+         46         |       TABLE        |             dc19             |            1 -> 1            |      SUCCESS       
+         47         |       TABLE        |             dc16             |            1 -> 1            |      SUCCESS       
+         48         |       TABLE        |             dc17             |            1 -> 1            |      SUCCESS       
+         49         |       TABLE        |             dc14             |            1 -> 1            |      SUCCESS       
+         50         |       TABLE        |             dc15             |            1 -> 1            |      SUCCESS       
+         51         |       TABLE        |             dc13             |            1 -> 1            |      SUCCESS       
+         52         |       TABLE        |       dc50_user_qichu        |            1 -> 1            |      SUCCESS       
+         53         |       TABLE        |         grjysd_type          |            1 -> 1            |      SUCCESS       
+         54         |       TABLE        |             dc21             |            1 -> 1            |      SUCCESS       
+         55         |       TABLE        |             dc20             |            1 -> 1            |      SUCCESS       
+         56         |       TABLE        |             dc60             |            1 -> 1            |      SUCCESS       
+         57         |       TABLE        |            dc281             |            1 -> 1            |      SUCCESS       
+         58         |       TABLE        |            dc282             |            1 -> 1            |      SUCCESS       
+         59         |       TABLE        |            dc280             |            1 -> 1            |      SUCCESS       
+         60         |       TABLE        |           ocr_pdf            |            1 -> 1            |      SUCCESS       
+         61         |       TABLE        |             s20              |            1 -> 1            |      SUCCESS       
+         62         |       TABLE        |             s22              |            1 -> 1            |      SUCCESS       
+         63         |       TABLE        |             dc53             |            1 -> 1            |      SUCCESS       
+         64         |       TABLE        |             s21              |            1 -> 1            |      SUCCESS       
+         65         |       TABLE        |             dc50             |            1 -> 1            |      SUCCESS       
+         66         |       TABLE        |            dc601             |            1 -> 1            |      SUCCESS       
+         67         |       TABLE        |            dc602             |            1 -> 1            |      SUCCESS       
+         68         |       TABLE        |           gz_pzkm            |            1 -> 1            |      SUCCESS       
+         69         |       TABLE        |            dc120             |            1 -> 1            |      SUCCESS       
+         70         |       TABLE        |            dc121             |            1 -> 1            |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 70		End Time: 2024-10-24 06:44:07
+
+
+2024-10-24 06:44:07 [INFO] Dump schema finished. Total Elapsed: 2.016 s
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc14"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc13"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc16"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc15"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "grjysd_type"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc18"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc17"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc53"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc19"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc50"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc282"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc602"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc25"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc21"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "grjysd_slave"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc26"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc20"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc29"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc28"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc250"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc50_last"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc60"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "s22"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "s21"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc50_user_qichu"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "s20"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc35"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "ndks"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "gz_pzkm"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc102"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "fypj_img_path"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc101"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc25"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc16"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc50"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc282"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc14"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc15"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc13"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc18"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "grjysd_slave"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc21"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc19"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc28"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc53"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "grjysd_type"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc20"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc29"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc17"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc102"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc602"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "s21"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc35"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "fypj_img_path"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc250"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "s20"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc60"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc50_last"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc50_user_qichu"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc26"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "gz_pzkm"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "s22"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "ndks"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc101"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc260"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc19"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc72"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc53"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc50"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc108"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc18"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc16"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc28"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "s21"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc282"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc17"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc21"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc35"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc20"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc107"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc15"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc29"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc109"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "grjysd_master"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc104"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc103"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "s20"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc72"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc108"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc260"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc60"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc50_user_qichu"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "s22"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc26"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc106"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc105"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "data_queren"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc14"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc50_last"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc107"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "grjysd_master"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc109"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc104"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc281"...
+2024-10-24 06:44:07 [INFO] Querying primary key for table "dc103"...
+2024-10-24 06:44:07 [INFO] Querying table entry for: "dc280"...
+2024-10-24 06:44:07 [INFO] Querying unique key(with non-null columns) for table "dc260"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc111"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc110"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc113"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dian_pingzheng_pdf"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc112"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc50_user"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc115"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc114"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc117"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc106"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc105"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "data_queren"...
+2024-10-24 06:44:08 [INFO] Querying table entry for: "dc116"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc280"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc281"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc111"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc110"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc112"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc113"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dian_pingzheng_pdf"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc50_user"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc114"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc117"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc116"...
+2024-10-24 06:44:08 [INFO] Querying primary key for table "dc115"...
+2024-10-24 06:44:08 [INFO] Querying unique key(with non-null columns) for table "dc280"...
+2024-10-24 06:44:08 [INFO] Querying unique key(with non-null columns) for table "dc281"...
+2024-10-24 06:44:08 [INFO] Querying unique key(with non-null columns) for table "data_queren"...
+2024-10-24 06:44:08 [INFO] Querying unique key(with non-null columns) for table "dc50_user"...
+2024-10-24 06:44:08 [INFO] Query all table entries success. Elapsed: 1.142 s
+2024-10-24 06:44:08 [INFO] Generating sub-tasks by partitions and primary/unique keys...
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "data_queren" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc35" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc50_last" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc260" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc29" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc28" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc26" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc50_user" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc18" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc19" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc16" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc21" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc50_user_qichu" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc17" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc14" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc60" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc281" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc20" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc280" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc15" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "s20" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "s21" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc282" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc50" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "dc53" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(without primary key): "s22" success. Ranges: 1
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc110" success. Ranges: 1. Elapsed: 46.95 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dian_pingzheng_pdf" success. Ranges: 1. Elapsed: 47.58 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "ndks" success. Ranges: 1. Elapsed: 46.74 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc104" success. Ranges: 1. Elapsed: 46.15 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc114" success. Ranges: 1. Elapsed: 47.66 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "grjysd_slave" success. Ranges: 1. Elapsed: 46.73 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc108" success. Ranges: 1. Elapsed: 46.80 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc112" success. Ranges: 1. Elapsed: 47.66 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc115" success. Ranges: 1. Elapsed: 48.27 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc117" success. Ranges: 1. Elapsed: 48.54 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc116" success. Ranges: 1. Elapsed: 48.46 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc109" success. Ranges: 1. Elapsed: 47.31 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc111" success. Ranges: 1. Elapsed: 48.31 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc107" success. Ranges: 1. Elapsed: 47.26 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "fypj_img_path" success. Ranges: 1. Elapsed: 49.28 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc106" success. Ranges: 1. Elapsed: 47.65 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc72" success. Ranges: 1. Elapsed: 47.97 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc113" success. Ranges: 1. Elapsed: 48.63 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc25" success. Ranges: 1. Elapsed: 50.18 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc102" success. Ranges: 1. Elapsed: 85.83 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc101" success. Ranges: 1. Elapsed: 85.95 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc103" success. Ranges: 1. Elapsed: 86.44 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "grjysd_master" success. Ranges: 1. Elapsed: 86.51 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc602" success. Ranges: 1. Elapsed: 86.05 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "grjysd_type" success. Ranges: 1. Elapsed: 86.45 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc105" success. Ranges: 1. Elapsed: 86.94 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "gz_pzkm" success. Ranges: 1. Elapsed: 86.49 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc13" success. Ranges: 1. Elapsed: 87.55 ms
+2024-10-24 06:44:08 [INFO] Split rows for non-partitioned table(with primary key): "dc250" success. Ranges: 1. Elapsed: 93.03 ms
+2024-10-24 06:44:08 [INFO] Generate 70 dump tasks finished. Total Elapsed: 102.2 ms
+2024-10-24 06:44:08 [INFO] Start 32 record dump threads for 70 dump tasks finished
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc18.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc16.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc15.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_user_qichu.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc281.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc20.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc53.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc280.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_slave.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s20.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc282.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/ndks.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/data_queren.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc21.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_user.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc60.sql" finished.
+2024-10-24 06:44:08 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/fypj_img_path.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc110.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc17.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s22.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc117.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc101.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc113.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc602.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc105.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc28.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc116.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc26.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc107.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/s21.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_type.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dian_pingzheng_pdf.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc114.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/grjysd_master.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc104.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc35.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc19.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc260.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc112.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc115.sql" finished.
+2024-10-24 06:44:09 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc103.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc102.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50_last.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc111.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc106.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/gz_pzkm.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc14.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc108.sql" finished.
+2024-10-24 06:44:10 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc109.sql" finished.
+2024-10-24 06:44:11 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc50.sql" finished.
+2024-10-24 06:44:13 [INFO] 
+
+Dump Performance Monitor: 
+-------------------------------------------------------------------------------------------------------
+ Dimension \ Metric |             Tps              |          Throughput          |       Buffer       
+-------------------------------------------------------------------------------------------------------
+     1.sec.avg      |     44274.11 Records/sec     |         13.55 MB/sec         |      1 Slots       
+     1.min.avg      |     44278.4 Records/sec      |         13.54 MB/sec         |      1 Slots       
+       Total        |        221845 Records        |            67 MB             |      1 Slots       
+-------------------------------------------------------------------------------------------------------
+
+
+2024-10-24 06:44:14 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc29.sql" finished.
+2024-10-24 06:44:14 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc72.sql" finished.
+2024-10-24 06:44:16 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc25.sql" finished.
+2024-10-24 06:44:17 [INFO] ----------	Finished Tasks: 68	Running Tasks: 2	Progress: 97.00%	----------
+2024-10-24 06:44:18 [INFO] 
+
+Dump Performance Monitor: 
+-------------------------------------------------------------------------------------------------------
+ Dimension \ Metric |             Tps              |          Throughput          |       Buffer       
+-------------------------------------------------------------------------------------------------------
+     1.sec.avg      |     40526.54 Records/sec     |         14.09 MB/sec         |      1 Slots       
+     1.min.avg      |     43680.65 Records/sec     |         13.63 MB/sec         |      1 Slots       
+       Total        |        405644 Records        |            141 MB            |      1 Slots       
+-------------------------------------------------------------------------------------------------------
+
+
+2024-10-24 06:44:18 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc13.sql" finished.
+2024-10-24 06:44:22 [INFO] ----------	Finished Tasks: 69	Running Tasks: 1	Progress: 98.00%	----------
+2024-10-24 06:44:23 [INFO] 
+
+Dump Performance Monitor: 
+-------------------------------------------------------------------------------------------------------
+ Dimension \ Metric |             Tps              |          Throughput          |       Buffer       
+-------------------------------------------------------------------------------------------------------
+     1.sec.avg      |     35969.07 Records/sec     |         14.11 MB/sec         |      1 Slots       
+     1.min.avg      |     42336.42 Records/sec     |         13.67 MB/sec         |      1 Slots       
+       Total        |        539885 Records        |            211 MB            |      1 Slots       
+-------------------------------------------------------------------------------------------------------
+
+
+2024-10-24 06:44:26 [INFO] Dump data to "sqls/ncloud-global-tenant/data/ncloud-global-tenant/TABLE/dc250.sql" finished.
+2024-10-24 06:44:26 [INFO] ----------	Finished Tasks: 70	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:44:26 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |         data_queren          |             400              |      SUCCESS       
+         2          |       TABLE        |        tenant_queren         |              0               |      SUCCESS       
+         3          |       TABLE        |        fypj_img_path         |              3               |      SUCCESS       
+         4          |       TABLE        |             dc35             |             2930             |      SUCCESS       
+         5          |       TABLE        |          dc50_last           |              22              |      SUCCESS       
+         6          |       TABLE        |            dc117             |             440              |      SUCCESS       
+         7          |       TABLE        |            dc118             |              0               |      SUCCESS       
+         8          |       TABLE        |            dc115             |             153              |      SUCCESS       
+         9          |       TABLE        |            dc116             |             459              |      SUCCESS       
+         10         |       TABLE        |      dian_pingzheng_pdf      |             225              |      SUCCESS       
+         11         |       TABLE        |            dc113             |             215              |      SUCCESS       
+         12         |       TABLE        |            dc114             |             469              |      SUCCESS       
+         13         |       TABLE        |          task_sb_lc          |              0               |      SUCCESS       
+         14         |       TABLE        |            dc111             |             552              |      SUCCESS       
+         15         |       TABLE        |            dc112             |             414              |      SUCCESS       
+         16         |       TABLE        |            dc110             |             609              |      SUCCESS       
+         17         |       TABLE        |            dc261             |              0               |      SUCCESS       
+         18         |       TABLE        |            dc260             |             8880             |      SUCCESS       
+         19         |       TABLE        |             dc29             |            76675             |      SUCCESS       
+         20         |       TABLE        |             dc28             |             4613             |      SUCCESS       
+         21         |       TABLE        |             dc25             |            71553             |      SUCCESS       
+         22         |       TABLE        |             ndks             |              67              |      SUCCESS       
+         23         |       TABLE        |             dc26             |             4440             |      SUCCESS       
+         24         |       TABLE        |       auto_task_fapiao       |              0               |      SUCCESS       
+         25         |       TABLE        |         grjysd_slave         |              7               |      SUCCESS       
+         26         |       TABLE        |       employees_test2        |              0               |      SUCCESS       
+         27         |       TABLE        |       employees_test3        |              0               |      SUCCESS       
+         28         |       TABLE        |       employees_test1        |              0               |      SUCCESS       
+         29         |       TABLE        |             dc72             |            31954             |      SUCCESS       
+         30         |       TABLE        |            dc108             |             333              |      SUCCESS       
+         31         |       TABLE        |            dc109             |             502              |      SUCCESS       
+         32         |       TABLE        |            dc106             |             2461             |      SUCCESS       
+         33         |       TABLE        |            dc107             |             4218             |      SUCCESS       
+         34         |       TABLE        |            dc104             |             241              |      SUCCESS       
+         35         |       TABLE        |            dc105             |             428              |      SUCCESS       
+         36         |       TABLE        |        grjysd_master         |              4               |      SUCCESS       
+         37         |       TABLE        |            dc102             |              20              |      SUCCESS       
+         38         |       TABLE        |            dc103             |             618              |      SUCCESS       
+         39         |       TABLE        |          employees           |              0               |      SUCCESS       
+         40         |       TABLE        |            dc101             |             462              |      SUCCESS       
+         41         |       TABLE        |       employees_test5        |              0               |      SUCCESS       
+         42         |       TABLE        |            dc250             |            271921            |      SUCCESS       
+         43         |       TABLE        |          task_jilu           |              0               |      SUCCESS       
+         44         |       TABLE        |          dc50_user           |             689              |      SUCCESS       
+         45         |       TABLE        |             dc18             |              32              |      SUCCESS       
+         46         |       TABLE        |             dc19             |             6076             |      SUCCESS       
+         47         |       TABLE        |             dc16             |              38              |      SUCCESS       
+         48         |       TABLE        |             dc17             |             464              |      SUCCESS       
+         49         |       TABLE        |             dc14             |             3741             |      SUCCESS       
+         50         |       TABLE        |             dc15             |              16              |      SUCCESS       
+         51         |       TABLE        |             dc13             |            104784            |      SUCCESS       
+         52         |       TABLE        |         grjysd_type          |             353              |      SUCCESS       
+         53         |       TABLE        |       dc50_user_qichu        |             295              |      SUCCESS       
+         54         |       TABLE        |             dc21             |             1827             |      SUCCESS       
+         55         |       TABLE        |             dc20             |              33              |      SUCCESS       
+         56         |       TABLE        |             dc60             |             2300             |      SUCCESS       
+         57         |       TABLE        |            dc281             |              4               |      SUCCESS       
+         58         |       TABLE        |            dc282             |              3               |      SUCCESS       
+         59         |       TABLE        |            dc280             |              4               |      SUCCESS       
+         60         |       TABLE        |           ocr_pdf            |              0               |      SUCCESS       
+         61         |       TABLE        |             s20              |              8               |      SUCCESS       
+         62         |       TABLE        |             s22              |             759              |      SUCCESS       
+         63         |       TABLE        |             dc53             |              4               |      SUCCESS       
+         64         |       TABLE        |             s21              |             338              |      SUCCESS       
+         65         |       TABLE        |             dc50             |             2744             |      SUCCESS       
+         66         |       TABLE        |            dc601             |              0               |      SUCCESS       
+         67         |       TABLE        |            dc602             |              3               |      SUCCESS       
+         68         |       TABLE        |           gz_pzkm            |              2               |      SUCCESS       
+         69         |       TABLE        |            dc120             |              0               |      SUCCESS       
+         70         |       TABLE        |            dc121             |              0               |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 610805		End Time: 2024-10-24 06:44:26
+
+
+2024-10-24 06:44:26 [INFO] Dump record finished. Total Elapsed: 19.27 s
+2024-10-24 06:44:26 [INFO] System exit 0

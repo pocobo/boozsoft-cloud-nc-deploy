@@ -1,0 +1,306 @@
+2024-10-24 06:43:52 [INFO] Trying to establish JDBC connection to `root@csddev#csddevob`...
+2024-10-24 06:43:52 [INFO] Server Mode: OBMYSQL-4.2.3.0
+2024-10-24 06:43:52 [INFO] Querying `VIEW` definitions...
+2024-10-24 06:43:53 [WARN] No VIEW were found in "ncloud-global-org"
+2024-10-24 06:43:53 [INFO] Querying `SEQUENCE` definitions...
+2024-10-24 06:43:53 [WARN] No SEQUENCE were found in "ncloud-global-org"
+2024-10-24 06:43:53 [INFO] Querying `TABLE_GROUP` definitions...
+2024-10-24 06:43:53 [WARN] No TABLEGROUP are exist in the tenant: "csddev"
+2024-10-24 06:43:53 [INFO] Querying `FUNCTION` definitions...
+2024-10-24 06:43:53 [WARN] No FUNCTION were found in "ncloud-global-org"
+2024-10-24 06:43:53 [INFO] Querying `PROCEDURE` definitions...
+2024-10-24 06:43:53 [WARN] No PROCEDURE were found in "ncloud-global-org"
+2024-10-24 06:43:53 [INFO] Querying table column metadata, this might take a while...
+2024-10-24 06:43:53 [INFO] Filtering out empty tables...
+2024-10-24 06:43:53 [INFO] Found 3 empty tables before executing. Elapsed: 509.8 ms
+2024-10-24 06:43:53 [INFO] Generate 1 dump tasks finished. Total Elapsed: 2.022 ms
+2024-10-24 06:43:53 [INFO] Start 32 schema dump threads for 1 dump tasks finished.
+2024-10-24 06:43:53 [INFO] Query TABLE schema success. DbType: OBMYSQL Version: 4.2.3.0
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t5 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t5-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t6 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t6-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t4 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t4-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c31 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c31-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c30 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c30-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c33 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c33-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c32 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c32-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c11 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c11-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c10 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c10-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t7 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t7-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t8 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t8-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c12 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c12-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t3 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t3-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c13 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c13-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c15 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c15-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc119 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc119-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] s31 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/s31-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t10 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t10-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc12 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc12-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] s72 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/s72-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c01 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c01-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c02 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c02-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c20 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c20-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc80 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc80-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c21 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c21-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c03 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c03-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] j02 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/j02-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] j01 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/j01-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc52 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc52-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc91 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc91-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc51 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc51-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc90 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc90-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t1 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t1-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] c14 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c14-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc5 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc5-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc11 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc11-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] dc75 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc75-schema.sql " finished
+2024-10-24 06:43:54 [INFO] Dump [TABLE] t2 to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t2-schema.sql " finished
+2024-10-24 06:43:54 [INFO] ----------	Finished Tasks: 1	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:43:54 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |              t4              |            1 -> 1            |      SUCCESS       
+         2          |       TABLE        |             c31              |            1 -> 1            |      SUCCESS       
+         3          |       TABLE        |              t5              |            1 -> 1            |      SUCCESS       
+         4          |       TABLE        |             c30              |            1 -> 1            |      SUCCESS       
+         5          |       TABLE        |              t6              |            1 -> 1            |      SUCCESS       
+         6          |       TABLE        |             c33              |            1 -> 1            |      SUCCESS       
+         7          |       TABLE        |             c11              |            1 -> 1            |      SUCCESS       
+         8          |       TABLE        |             c32              |            1 -> 1            |      SUCCESS       
+         9          |       TABLE        |             c10              |            1 -> 1            |      SUCCESS       
+         10         |       TABLE        |              t7              |            1 -> 1            |      SUCCESS       
+         11         |       TABLE        |              t8              |            1 -> 1            |      SUCCESS       
+         12         |       TABLE        |             c13              |            1 -> 1            |      SUCCESS       
+         13         |       TABLE        |             c12              |            1 -> 1            |      SUCCESS       
+         14         |       TABLE        |             c15              |            1 -> 1            |      SUCCESS       
+         15         |       TABLE        |             c14              |            1 -> 1            |      SUCCESS       
+         16         |       TABLE        |             dc12             |            1 -> 1            |      SUCCESS       
+         17         |       TABLE        |             s72              |            1 -> 1            |      SUCCESS       
+         18         |       TABLE        |             s31              |            1 -> 1            |      SUCCESS       
+         19         |       TABLE        |             t10              |            1 -> 1            |      SUCCESS       
+         20         |       TABLE        |            dc119             |            1 -> 1            |      SUCCESS       
+         21         |       TABLE        |             dc5              |            1 -> 1            |      SUCCESS       
+         22         |       TABLE        |             dc80             |            1 -> 1            |      SUCCESS       
+         23         |       TABLE        |             c20              |            1 -> 1            |      SUCCESS       
+         24         |       TABLE        |             c21              |            1 -> 1            |      SUCCESS       
+         25         |       TABLE        |             c02              |            1 -> 1            |      SUCCESS       
+         26         |       TABLE        |             c01              |            1 -> 1            |      SUCCESS       
+         27         |       TABLE        |             c03              |            1 -> 1            |      SUCCESS       
+         28         |       TABLE        |             j01              |            1 -> 1            |      SUCCESS       
+         29         |       TABLE        |             j02              |            1 -> 1            |      SUCCESS       
+         30         |       TABLE        |             dc11             |            1 -> 1            |      SUCCESS       
+         31         |       TABLE        |             dc52             |            1 -> 1            |      SUCCESS       
+         32         |       TABLE        |             dc75             |            1 -> 1            |      SUCCESS       
+         33         |       TABLE        |             dc51             |            1 -> 1            |      SUCCESS       
+         34         |       TABLE        |             dc90             |            1 -> 1            |      SUCCESS       
+         35         |       TABLE        |             dc91             |            1 -> 1            |      SUCCESS       
+         36         |       TABLE        |              t1              |            1 -> 1            |      SUCCESS       
+         37         |       TABLE        |              t2              |            1 -> 1            |      SUCCESS       
+         38         |       TABLE        |              t3              |            1 -> 1            |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 38		End Time: 2024-10-24 06:43:54
+
+
+2024-10-24 06:43:54 [INFO] Dump schema finished. Total Elapsed: 1.014 s
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc90"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "j02"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "j01"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc75"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c21"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc51"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c20"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c03"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc91"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc52"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c02"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c01"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t2"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t1"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c15"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t7"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t8"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t6"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t4"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "s72"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "t3"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c30"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c12"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c10"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c11"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c33"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc80"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c14"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c31"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "c13"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc11"...
+2024-10-24 06:43:54 [INFO] Querying table entry for: "dc12"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t8"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t7"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t4"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "j02"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c03"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t2"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c20"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c01"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c15"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "dc51"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c21"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "dc90"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "dc91"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t6"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "c02"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "dc52"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "dc75"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "t3"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "s72"...
+2024-10-24 06:43:54 [INFO] Querying primary key for table "j01"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c12"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c11"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "t1"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "dc80"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c10"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c31"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c14"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "dc11"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "dc12"...
+2024-10-24 06:43:55 [INFO] Querying table entry for: "s31"...
+2024-10-24 06:43:55 [INFO] Querying table entry for: "t10"...
+2024-10-24 06:43:55 [INFO] Querying table entry for: "dc5"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c30"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c33"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "c13"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "s31"...
+2024-10-24 06:43:55 [INFO] Querying unique key(with non-null columns) for table "c14"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "t10"...
+2024-10-24 06:43:55 [INFO] Querying primary key for table "dc5"...
+2024-10-24 06:43:55 [INFO] Query all table entries success. Elapsed: 732.8 ms
+2024-10-24 06:43:55 [INFO] Generating sub-tasks by partitions and primary/unique keys...
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(without primary key): "c14" success. Ranges: 1
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c33" success. Ranges: 1. Elapsed: 47.32 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c11" success. Ranges: 1. Elapsed: 47.23 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c31" success. Ranges: 1. Elapsed: 47.91 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c15" success. Ranges: 1. Elapsed: 46.20 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c30" success. Ranges: 1. Elapsed: 47.64 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t8" success. Ranges: 1. Elapsed: 46.87 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c10" success. Ranges: 1. Elapsed: 47.30 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c13" success. Ranges: 1. Elapsed: 46.98 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t7" success. Ranges: 1. Elapsed: 47.28 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc12" success. Ranges: 1. Elapsed: 46.19 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c12" success. Ranges: 1. Elapsed: 46.40 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t6" success. Ranges: 1. Elapsed: 47.99 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t4" success. Ranges: 1. Elapsed: 48.69 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "s72" success. Ranges: 1. Elapsed: 86.36 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc5" success. Ranges: 1. Elapsed: 86.23 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "s31" success. Ranges: 1. Elapsed: 87.02 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t10" success. Ranges: 1. Elapsed: 86.94 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c21" success. Ranges: 1. Elapsed: 86.93 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "j02" success. Ranges: 1. Elapsed: 86.71 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc11" success. Ranges: 1. Elapsed: 86.82 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c20" success. Ranges: 1. Elapsed: 87.53 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc80" success. Ranges: 1. Elapsed: 87.31 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c03" success. Ranges: 1. Elapsed: 87.48 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "j01" success. Ranges: 1. Elapsed: 87.44 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c02" success. Ranges: 1. Elapsed: 87.85 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "c01" success. Ranges: 1. Elapsed: 87.58 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc52" success. Ranges: 1. Elapsed: 125.8 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc75" success. Ranges: 1. Elapsed: 125.7 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t1" success. Ranges: 1. Elapsed: 125.7 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t3" success. Ranges: 1. Elapsed: 81.38 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "t2" success. Ranges: 1. Elapsed: 81.46 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc90" success. Ranges: 1. Elapsed: 126.0 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc51" success. Ranges: 1. Elapsed: 126.2 ms
+2024-10-24 06:43:55 [INFO] Split rows for non-partitioned table(with primary key): "dc91" success. Ranges: 1. Elapsed: 129.7 ms
+2024-10-24 06:43:55 [INFO] Generate 38 dump tasks finished. Total Elapsed: 139.6 ms
+2024-10-24 06:43:55 [INFO] Start 32 record dump threads for 38 dump tasks finished
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t7.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/s31.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c01.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c03.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c10.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/j01.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c02.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/j02.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c13.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c21.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c33.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t1.sql" finished.
+2024-10-24 06:43:55 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t3.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc52.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c20.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/s72.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc12.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t6.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c31.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c12.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c14.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t8.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc80.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc5.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc51.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c15.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc11.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c11.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/c30.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t2.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc75.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t10.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc91.sql" finished.
+2024-10-24 06:43:56 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/dc90.sql" finished.
+2024-10-24 06:43:57 [INFO] Dump data to "sqls/ncloud-global-org/data/ncloud-global-org/TABLE/t4.sql" finished.
+2024-10-24 06:43:57 [INFO] ----------	Finished Tasks: 38	Running Tasks: 0	Progress: 100.00%	----------
+2024-10-24 06:43:57 [INFO] 
+
+All Dump Tasks Finished: 
+
+----------------------------------------------------------------------------------------------------------------------------
+        No.#        |        Type        |             Name             |            Count             |       Status       
+----------------------------------------------------------------------------------------------------------------------------
+         1          |       TABLE        |              t4              |             386              |      SUCCESS       
+         2          |       TABLE        |             c31              |              46              |      SUCCESS       
+         3          |       TABLE        |             c30              |              9               |      SUCCESS       
+         4          |       TABLE        |              t5              |              0               |      SUCCESS       
+         5          |       TABLE        |              t6              |              3               |      SUCCESS       
+         6          |       TABLE        |             c33              |              10              |      SUCCESS       
+         7          |       TABLE        |             c11              |              13              |      SUCCESS       
+         8          |       TABLE        |              t7              |              1               |      SUCCESS       
+         9          |       TABLE        |             c10              |              7               |      SUCCESS       
+         10         |       TABLE        |             c32              |              0               |      SUCCESS       
+         11         |       TABLE        |             c13              |              7               |      SUCCESS       
+         12         |       TABLE        |              t8              |              5               |      SUCCESS       
+         13         |       TABLE        |             c12              |              12              |      SUCCESS       
+         14         |       TABLE        |             c15              |              29              |      SUCCESS       
+         15         |       TABLE        |             c14              |             116              |      SUCCESS       
+         16         |       TABLE        |             dc12             |              1               |      SUCCESS       
+         17         |       TABLE        |             s72              |              3               |      SUCCESS       
+         18         |       TABLE        |             s31              |              8               |      SUCCESS       
+         19         |       TABLE        |             t10              |             393              |      SUCCESS       
+         20         |       TABLE        |            dc119             |              0               |      SUCCESS       
+         21         |       TABLE        |             dc5              |             445              |      SUCCESS       
+         22         |       TABLE        |             dc80             |             455              |      SUCCESS       
+         23         |       TABLE        |             c20              |              2               |      SUCCESS       
+         24         |       TABLE        |             c21              |              42              |      SUCCESS       
+         25         |       TABLE        |             c02              |              7               |      SUCCESS       
+         26         |       TABLE        |             c01              |              7               |      SUCCESS       
+         27         |       TABLE        |             c03              |              5               |      SUCCESS       
+         28         |       TABLE        |             j01              |              5               |      SUCCESS       
+         29         |       TABLE        |             j02              |              13              |      SUCCESS       
+         30         |       TABLE        |             dc11             |              4               |      SUCCESS       
+         31         |       TABLE        |             dc52             |              53              |      SUCCESS       
+         32         |       TABLE        |             dc75             |             116              |      SUCCESS       
+         33         |       TABLE        |             dc51             |             1816             |      SUCCESS       
+         34         |       TABLE        |             dc90             |             270              |      SUCCESS       
+         35         |       TABLE        |             dc91             |              97              |      SUCCESS       
+         36         |       TABLE        |              t1              |              4               |      SUCCESS       
+         37         |       TABLE        |              t2              |              3               |      SUCCESS       
+         38         |       TABLE        |              t3              |             206              |      SUCCESS       
+----------------------------------------------------------------------------------------------------------------------------
+
+Total Count: 4599		End Time: 2024-10-24 06:43:57
+
+
+2024-10-24 06:43:57 [INFO] Dump record finished. Total Elapsed: 2.895 s
+2024-10-24 06:43:57 [INFO] System exit 0
